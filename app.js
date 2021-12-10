@@ -9,7 +9,7 @@ app.use(express.static(publicPath));
 app.use(express.static('src'));
 
 app.get('*', (req, res) => {
-   res.sendFile(path.join(publicPath, 'index.html'));
+   res.sendFile(path.join(publicPath, 'view.html'));
 });app.listen(port, () => {
    console.log('Server is up!');
 });
