@@ -1,130 +1,34 @@
 [
   {
     "id": 0,
-    "name": "João Marques",
-    "picture": "images/nft/JMarques.png",
+    "name": "Robot",
+    "picture": "images/nft/robot.png",
     "age": 28,
-    "breed": "João Marques",
+    "breed": "Robot",
     "location": "Porto, Portugal"
   },
   {
     "id": 1,
-    "name": "Bernardo Pereira",
-    "picture": "images/nft/Bernardo2.png",
+    "name": "Robot",
+    "picture": "images/nft/robot.png",
     "age": 29,
-    "breed": "Bernardo Tavares",
+    "breed": "Robot",
     "location": "Porto, Portugal"
   },
   {
     "id": 2,
-    "name": "Bernardo Tavares",
-    "picture": "images/nft/Bernardo1.png",
+    "name": "Robot",
+    "picture": "images/nft/robot.png",
     "age": 29,
-    "breed": "Bernardo Pereira",
+    "breed": "Robot",
     "location": "Porto, Portugal"
   },
   {
     "id": 3,
-    "name": "Henrique",
-    "picture": "images/nft/Henrique.png",
+    "name": "Robot",
+    "picture": "images/nft/robot.png",
     "age": 35,
-    "breed": "Henrique",
+    "breed": "Robot",
     "location": "São Paulo, Brazil"
-  },
-  {
-    "id": 4,
-    "name": "André",
-    "picture": "images/nft/Andre.png",
-    "age": 30,
-    "breed": "André",
-    "location": "Lisboa, Portugal"
-  },
-  {
-    "id": 5,
-    "name": "Vinicius",
-    "picture": "images/nft/Aeoniv.png",
-    "age": 33,
-    "breed": "Vinicius",
-    "location": "Campina Grande, Brasil"
-  },
-  {
-    "id": 6,
-    "name": "Irani",
-    "picture": "images/nft/Irani.png",
-    "age": 53,
-    "breed": "Irani",
-    "location": "Santa Rita, Brazil"
-  },
-  {
-    "id": 7,
-    "name": "CUBEE",
-    "picture": "images/nft/robot.png",
-    "age": 3,
-    "breed": "CUBEE",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 8,
-    "name": "CUBEE",
-    "picture": "images/nft/robot.png",
-    "age": 2,
-    "breed": "CUBEE",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 9,
-    "name": "CUBEE",
-    "picture": "images/nft/robot.png",
-    "age": 3,
-    "breed": "CUBEE",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 10,
-    "name": "CUBEE",
-    "picture": "images/nft/robot.png",
-    "age": 2,
-    "breed": "CUBEE",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 11,
-    "name": "CUBEE",
-    "picture": "images/nft/robot.png",
-    "age": 3,
-    "breed": "CUBEE",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 12,
-    "name": "CUBEE",
-    "picture": "images/nft/robot.png",
-    "age": 3,
-    "breed": "CUBEE",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 13,
-    "name": "CUBEE",
-    "picture": "images/nft/robot.png",
-    "age": 4,
-    "breed": "CUBEE",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 14,
-    "name": "Ethel",
-    "picture": "images/nft/robot.png",
-    "age": 2,
-    "breed": "Human",
-    "location": "Zion, Mars"
-  },
-  {
-    "id": 15,
-    "name": "Terry",
-    "picture": "images/nft/robot.png",
-    "age": 2,
-    "breed": "Human",
-    "location": "Zion, Mars"
   }
 ]
