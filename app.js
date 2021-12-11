@@ -1,25 +1,39 @@
-const path = require('path');
-const express = require('express');
-const app = express();
+var express = require('express');
+var app = express();
+var path = require('path');
+var PORT = 1000;
+  
+// Static Middleware 
+app.use(express.static(path.join(__dirname, 'src')))
+  
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname,'views'))
 
-const publicPath = path.join(__dirname, '..', 'hexlibrium/src');
-//const privatePath = path.join(__dirname, '..', 'hexlibrium/src');
-const port = process.env.PORT || 1000;
-
-//
-// app.set('view engine', 'ejs')
-// app.set('views', path.join(__dirname,'views'))
-//app.use(express.static(path.join(__dirname,'src')));
-//
-
-app.use(express.static(publicPath));
-//app.use(express.static(privatePath));
-
-app.get('*', (req, res) => {
-   res.sendFile(path.join(publicPath, 'index.html'));
-});app.listen(port, () => {
-   console.log('Server is up!');
+app.get('/', function (req, res, next) {
+    res.render('view.ejs');
+})
+  
+app.listen(PORT, function(err){
+    if (err) console.log(err);
+    console.log("Server listening on PORT", PORT);
 });
+
+
+// var express    = require('express')
+// var serveIndex = require('serve-index')
+// var path = require('path')
+// var serveStatic = require('serve-static')
+// var app = express()
+// var port = process.env.PORT || 1000;
+// /**for files */
+// app.use(serveStatic(path.join(__dirname, 'src')));
+// /**for directory */
+// app.use('/', express.static('src'), serveIndex('src', {'icons': true}))
+
+// // Listen
+// app.listen(port,  function () {
+//   console.log('listening on port:',+ port );
+// })
 
 ///////////////////////////////////////////////////////////////////////////////////
 
