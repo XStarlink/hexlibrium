@@ -12,8 +12,7 @@ const port = process.env.PORT || 1000;
 //app.use(express.static(path.join(__dirname,'src')));
 //
 
-app.use(express.static(publicPath));
-//app.use(express.static('src'));
+//app.use(express.static(publicPath));
 app.use(express.static(privatePath));
 
 app.get('*', (req, res) => {
