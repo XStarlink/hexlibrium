@@ -5,7 +5,7 @@
     "picture": "images/nft/robot.png",
     "age": 28,
     "breed": "Robot",
-    "location": "Porto, Portugal"
+    "location": "Earth, Cosmos"
   },
   {
     "id": 1,
@@ -13,7 +13,7 @@
     "picture": "images/nft/robot.png",
     "age": 29,
     "breed": "Robot",
-    "location": "Porto, Portugal"
+    "location": "Moom, Cosmos"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "picture": "images/nft/robot.png",
     "age": 29,
     "breed": "Robot",
-    "location": "Porto, Portugal"
+    "location": "Mars, Cosmos"
   },
   {
     "id": 3,
@@ -29,6 +29,6 @@
     "picture": "images/nft/robot.png",
     "age": 35,
     "breed": "Robot",
-    "location": "São Paulo, Brazil"
+    "location": "Venus, Cosmos"
   }
 ]
