@@ -427,22 +427,22 @@ const Textures = {
                     //     line.visible = false;
                     // }
          
-                    this.animations = {};
+                    // this.animations = {};
          
-                    gltf.animations.forEach( animation => {
-                        this.animations[animation.name.toLowerCase()] = animation;
-                    })
+                    // gltf.animations.forEach( animation => {
+                    //     this.animations[animation.name.toLowerCase()] = animation;
+                    // })
          
-                    const mixer = new AnimationMixer(gltf.scene);
+                    // const mixer = new AnimationMixer(gltf.scene);
          
-                    mixer.addEventListener('Idle', function(){ //added
-                        const action = 'Death'; //added
-                        //this.game.ui.toggleBriefcase();
-                    })
+                    // mixer.addEventListener('Idle', function(){ //added
+                    //     const action = 'Death'; //added
+                    //     //this.game.ui.toggleBriefcase();
+                    // })
                 
-                    action = 'Yes'; 
+                    // action = 'Yes'; 
          
-                    const ready = true;
+                    // const ready = true;
          
                     //this.game.startRendering();
                 },
