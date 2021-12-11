@@ -2,8 +2,8 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-const publicPath = path.join(__dirname, '..', 'hexlibrium/public/');
-const privatePath = path.join(__dirname, '..', 'hexlibrium/src/');
+const publicPath = path.join(__dirname, '..', 'hexlibrium/views');
+const privatePath = path.join(__dirname, '..', 'hexlibrium/src');
 const port = process.env.PORT || 1000;
 
 //
@@ -12,7 +12,7 @@ const port = process.env.PORT || 1000;
 //app.use(express.static(path.join(__dirname,'src')));
 //
 
-//app.use(express.static(publicPath));
+app.use(express.static(publicPath));
 app.use(express.static(privatePath));
 
 app.get('*', (req, res) => {
