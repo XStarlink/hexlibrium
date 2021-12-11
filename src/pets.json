@@ -3,32 +3,8 @@
     "id": 0,
     "name": "Robot",
     "picture": "images/nft/robot.png",
-    "age": 28,
+    "age": 8,
     "breed": "Robot",
     "location": "Earth, Cosmos"
-  },
-  {
-    "id": 1,
-    "name": "Robot",
-    "picture": "images/nft/robot.png",
-    "age": 29,
-    "breed": "Robot",
-    "location": "Moom, Cosmos"
-  },
-  {
-    "id": 2,
-    "name": "Robot",
-    "picture": "images/nft/robot.png",
-    "age": 29,
-    "breed": "Robot",
-    "location": "Mars, Cosmos"
-  },
-  {
-    "id": 3,
-    "name": "Robot",
-    "picture": "images/nft/robot.png",
-    "age": 35,
-    "breed": "Robot",
-    "location": "Venus, Cosmos"
   }
 ]
