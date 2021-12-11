@@ -3,16 +3,18 @@ const express = require('express');
 const app = express();
 
 const publicPath = path.join(__dirname, '..', 'hexlibrium/public');
+const privatePath = path.join(__dirname, '..', 'hexlibrium/src');
 const port = process.env.PORT || 1000;
 
 //
 // app.set('view engine', 'ejs')
 // app.set('views', path.join(__dirname,'views'))
-app.use(express.static(path.join(__dirname,'src')));
+//app.use(express.static(path.join(__dirname,'src')));
 //
 
 app.use(express.static(publicPath));
-app.use(express.static('src'));
+//app.use(express.static('src'));
+app.use(express.static(privatePath));
 
 app.get('*', (req, res) => {
    res.sendFile(path.join(publicPath, 'index.html'));

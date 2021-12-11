@@ -433,18 +433,18 @@ const Textures = {
                         this.animations[animation.name.toLowerCase()] = animation;
                     })
          
-                    this.mixer = new AnimationMixer(gltf.scene);
+                    const mixer = new AnimationMixer(gltf.scene);
          
-                    this.mixer.addEventListener('Idle', function(){ //added
-                        this.action = 'Death'; //added
+                    mixer.addEventListener('Idle', function(){ //added
+                        const action = 'Death'; //added
                         //this.game.ui.toggleBriefcase();
                     })
                 
-                    this.action = 'Yes'; 
+                    action = 'Yes'; 
          
-                    this.ready = true;
+                    const ready = true;
          
-                    this.game.startRendering();
+                    //this.game.startRendering();
                 },
                 // // called while loading is progressing
                 // xhr => {
