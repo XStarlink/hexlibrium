@@ -16,7 +16,7 @@ app.use(express.static(publicPath));
 app.use(express.static(privatePath));
 
 app.get('*', (req, res) => {
-   res.sendFile(path.join(publicPath, 'index.html'));
+   res.sendFile(path.join(privatePath, 'index.html'));
 });app.listen(port, () => {
    console.log('Server is up!');
 });
