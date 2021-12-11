@@ -1,22 +1,40 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-var PORT = 1000;
-  
-// Static Middleware 
-app.use(express.static(path.join(__dirname, 'src')))
-  
-app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname,'views'))
+//const cool = require('cool-ascii-faces');
+const express = require('express');
+const path = require('path');
+const PORT = process.env.PORT || 1000;
 
-app.get('/', function (req, res, next) {
-    res.render('view.ejs');
-})
+express()
+  .use(express.static(path.join(__dirname, 'src')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('view'))
+  //.get('/cool', (req, res) => res.send(cool()))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+
+
+
+
+// var express = require('express');
+// var app = express();
+// var path = require('path');
+// var PORT = 1000;
   
-app.listen(PORT, function(err){
-    if (err) console.log(err);
-    console.log("Server listening on PORT", PORT);
-});
+
+  
+// app.set('view engine', 'ejs')
+// app.set('views', path.join(__dirname,'views'))
+
+// app.get('/', function (req, res, next) {
+//     res.render('view.ejs');
+// })
+  
+// // Static Middleware 
+// app.use(express.static(path.join(__dirname, 'src')))
+
+// app.listen(PORT, function(err){
+//     if (err) console.log(err);
+//     console.log("Server listening on PORT", PORT);
+// });
 
 
 // var express    = require('express')
