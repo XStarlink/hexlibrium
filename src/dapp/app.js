@@ -36,31 +36,31 @@ App = {
       }
     }
     //modified
-    // // Legacy dapp browsers...
-    // else if (window.web3) {
-    //   App.web3Provider = window.web3.currentProvider;
-    //   //added
-    //   web3 = new Web3(web3.currentProvider);
-    // }
-    // // If no injected web3 instance is detected, fall back to Ganache
-    // else {
-    //   App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');  //7545
-    // }
-    // web3 = new Web3(App.web3Provider);
-
-    // return App.initContract();
-    // //modified
-    // //udemy
-      if(typeof web3 !== undefined){
-      App.web3Provider = web3.currentProvider;
-
-    }else {// If no injected web3 instance is detected, fallback to Truffle Develop.
-      App.web3Provider = new Web3.providers/HttpProvider('http://localhost:7545'); //https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161 //'http://localhost:7545' //'http://127.0.0.1:7545
-
+    // Legacy dapp browsers...
+    else if (window.web3) {
+      App.web3Provider = window.web3.currentProvider;
+      //added
+      web3 = new Web3(web3.currentProvider);
+    }
+    // If no injected web3 instance is detected, fall back to Ganache
+    else {
+      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');  //7545
     }
     web3 = new Web3(App.web3Provider);
 
     return App.initContract();
+    //modified
+    // //udemy
+    //   if(typeof web3 !== undefined){
+    //   App.web3Provider = web3.currentProvider;
+
+    // }else {// If no injected web3 instance is detected, fallback to Truffle Develop.
+    //   App.web3Provider = new Web3.providers/HttpProvider('http://localhost:7545'); //https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161 //'http://localhost:7545' //'http://127.0.0.1:7545
+
+    // }
+    // web3 = new Web3(App.web3Provider);
+
+    // return App.initContract();
 
   },
 
@@ -82,8 +82,14 @@ App = {
     return App.bindEvents();
   },
 
+
   bindEvents: function() {
+
     $(document).on('click', '.btn-adopt', App.handleAdopt);
+
+
+
+
   },
 
   markAdopted: function() {
@@ -112,6 +118,12 @@ App = {
     event.preventDefault();
 
     var petId = parseInt($(event.target).data('id'));
+
+    // var NFT = $('#container').hide();
+    $(".container").css("display", "none");
+    // NFT.style.display='none'
+
+    console.log(NFT)
      
       //truffleSite
       var adoptionInstance;

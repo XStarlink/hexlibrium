@@ -263,72 +263,73 @@
         // })
 
 
-    //    var iframeBlockly = document.createElement('div')
+       var iframeBlockly = document.createElement('iframe')
 
-    //    iframeBlockly.setAttribute('style', 'overflow: auto;', 'background: transparent') // width: 200%; height: 200%;
+       iframeBlockly.setAttribute('style', 'overflow: auto;', 'background: transparent') // width: 200%; height: 200%;
 
-    //     var closeLevel = document.createElement('button')
-    //     var closeText = document.createTextNode('Close Level')
-    //     closeLevel.appendChild(closeText)
-    //     closeLevel.classList.add('btn-primary')
-    //     closeLevel.classList.add('btn')
-    //     closeLevel.setAttribute('id','bhh')
+        var closeLevel = document.createElement('button')
+        var closeText = document.createTextNode('Close Level')
+        closeLevel.appendChild(closeText)
+        closeLevel.classList.add('btn-primary')
+        closeLevel.classList.add('btn')
+        closeLevel.setAttribute('id','bhh')
 
-    //     var openLevel = document.createElement('button')
-    //     var openText = document.createTextNode('Open Level')
-    //     openLevel.appendChild(openText)
-    //     openLevel.classList.add('btn-primary')
-    //     openLevel.classList.add('btn')
-    //     openLevel.setAttribute('id','bjj')
+        var openLevel = document.createElement('button')
+        var openText = document.createTextNode('Open Level')
+        openLevel.appendChild(openText)
+        openLevel.classList.add('btn-primary')
+        openLevel.classList.add('btn')
+        openLevel.setAttribute('id','bjj')
 
-    //     document.body.appendChild(openLevel)    
-    //     document.body.appendChild(closeLevel)
+        document.body.appendChild(openLevel)    
+        document.body.appendChild(closeLevel)
 
         
-    //     var bhh = document.getElementById('bhh')
-    //     bhh.setAttribute('style', 'display:none; position: absolute; margin: auto; left:50%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
-    //     var bjj = document.getElementById('bjj')
-    //     bjj.setAttribute('style', 'position: absolute;margin: auto;left:50%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
+        var bhh = document.getElementById('bhh')
+        bhh.setAttribute('style', 'display:none; position: absolute; margin: auto; left:50%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
+        var bjj = document.getElementById('bjj')
+        bjj.setAttribute('style', 'position: absolute;margin: auto;left:50%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
 
-    //     iframeBlockly.style.cssText = 'position:absolute; top:1%; background:#FFFFFF; border:#444 solid medium; left:1%;'
-    //     //iframeBlockly.src = 'http://localhost:3000/src/html/blockly.html'
-        
-    //     // iframeBlockly.className = 'iframeBlock'
-    //     // iframeBlockly.style.display = 'none'
-    //     // iframeBlockly.setAttribute("width", "50%")
-    //     // iframeBlockly.setAttribute("height", "20%")
+        iframeBlockly.style.cssText = 'position:absolute; top:1%; background:#FFFFFF; border:#444 solid medium; left:1%;'
+        //iframeBlockly.src = 'http://localhost:1000/blockly'
+        iframeBlockly.src = 'https://hexlibrium.herokuapp.com//blockly'
+
+        iframeBlockly.className = 'iframeBlock'
+        iframeBlockly.style.display = 'none'
+        iframeBlockly.setAttribute("width", "50%")
+        iframeBlockly.setAttribute("height", "20%")
 
       
 
-    //     // console.log(iframeBlockly)
-    //     // document.body.appendChild(iframeBlockly)
+        // console.log(iframeBlockly)
+        document.body.appendChild(iframeBlockly)
 
 
-    //     bhh.addEventListener('click', function(){
-    //         bhh.style.opacity = 0.7
-    //         iframeBlockly.style.display = 'none'
-    //         setTimeout(()=>{
-    //         bjj.style.display = 'block'
-    //         bhh.style.display = 'none'
-    //         bhh.style.opacity = 1
-    //         },400)
+        bhh.addEventListener('click', function(){
+            bhh.style.opacity = 0.7
+            iframeBlockly.style.display = 'none'
+            setTimeout(()=>{
+            bjj.style.display = 'block'
+            bhh.style.display = 'none'
+            bhh.style.opacity = 1
+            },400)
             
         
-    //     })
+        })
 
-    //     bjj.addEventListener('click', function(){
-    //         bjj.style.opacity = 0.7
-    //         iframeBlockly.style.display = 'block'
+        bjj.addEventListener('click', function(){
+            bjj.style.opacity = 0.7
+            iframeBlockly.style.display = 'block'
             
-    //         setTimeout(()=>{
-    //         bjj.style.display = 'none'
-    //         bhh.style.display = 'block'
-    //         bjj.style.opacity = 1
-    //         },400)
+            setTimeout(()=>{
+            bjj.style.display = 'none'
+            bhh.style.display = 'block'
+            bjj.style.opacity = 1
+            },400)
 
-    //         window.location.href = 'http://localhost:1000/blockly'
+            // window.location.href = 'http://localhost:1000/blockly'
             
-    //     })
+        })
 
 
         // const Blockly = require('blockly')
@@ -563,6 +564,7 @@
             //     lvl[1].addEventListener('click',(e)=>{
             //         e.preventDefault()
                     window.location.href = 'https://hexlibrium.herokuapp.com/'
+                    //window.location.href = 'http://localhost:1000/'
                 // })
             // }
             //hexlibrium

@@ -35,6 +35,8 @@ ELEMENTS['LEVELS']['BUTTONS'][0].style.filter = 'hue-rotate(' + (colors.hue + 45
 
 // level on click handler
 const levelonclick = (stage, i) => () => {
+    console.log(stage)
+    console.log(i)
 if (HANDLER.animating) return
 // update split sizes
 SPLIT.setSizes([30, 70])

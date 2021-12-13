@@ -27,6 +27,8 @@ const LEVEL = {
     // inject levels in a given div
     
     inject(div, n) { //div, n)
+        console.log('div',div)
+        console.log('n',n)
         // array of levels
         const array = []
 
@@ -45,6 +47,7 @@ const LEVEL = {
             lvl[1].addEventListener('click',(e)=>{
                 e.preventDefault()
                 window.location.href = 'https://hexlibrium.herokuapp.com/hexlibrium'
+                // window.location.href = 'http://localhost:1000/hexlibrium'
             })
         }
         //hexlibrium

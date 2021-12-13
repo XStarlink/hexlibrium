@@ -210,7 +210,12 @@
                <!--worlds json-->
        <script src="/js/worlds/jollycolor.js"></script>
        <script src="/js/worlds/worlds.js"></script>
+
+      
+
        <script src="/js/worlds/parser.js"></script>
+
+       <!-- <script> Parser(1, #ffffff)</script> -->
        
        <script src="/js/algorithm/stages.js"></script>
        
@@ -219,7 +224,7 @@
        <!--level generator-->
        
        <script src="/js/algorithm/level.js"></script>
-       <script> LEVEL.inject(2, 1) </script>
+       <script> LEVEL.inject(1, 2) </script>
        <!--elements-->
        <script src="/js/algorithm/elements.js"></script>
        <!--parallax-->
@@ -273,7 +278,10 @@
        <script src="/libs/sweetalert2/sweetalert2.all.min.js"></script>
      
        <script src="/js/algorithm/fx.js"></script>
-    
+       
+       <script>levelonclick(1, 1)</script>
+       <script>worldonclick(1)</script>
+      
        <!--debug menu-->
        <script src="/js/algorithm/debug.js"></script>
        
@@ -362,6 +370,8 @@
             });
         </script> -->
     </div>
+
+    <script>c = addEventListener('click'); console.log(c)</script>
 </body>
 
 </html>
