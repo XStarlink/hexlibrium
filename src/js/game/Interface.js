@@ -562,7 +562,7 @@
             // if(name[0].textContent == 'Impossible Ocean'){
             //     lvl[1].addEventListener('click',(e)=>{
             //         e.preventDefault()
-                    window.location.href = 'http://localhost:1000/'
+                    window.location.href = 'https://hexlibrium.herokuapp.com/'
                 // })
             // }
             //hexlibrium
