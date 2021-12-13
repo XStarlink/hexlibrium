@@ -54,10 +54,15 @@
             },
             // courtain elements
             'COURTAIN': {
-                'DIV': document.querySelector('.courtain'),
-                'PLANE': document.querySelector('.aviator'),
+                'DIV': document.querySelector('.courtain'),                
                 'CONTENT': document.querySelector('.content'),
-                'TITLE': document.querySelector('.title')
+                'TITLE': document.querySelector('.title'),
+                'PLANE': document.querySelector('.turtle'),
+                'ROBOT': document.querySelector('.robot'),
+                'MUNDO': document.querySelector('.mundo'),
+                'LOGO': document.querySelector('.logo'),
+                'NAME': document.querySelector('.hexName'),
+                
             }
         }
 

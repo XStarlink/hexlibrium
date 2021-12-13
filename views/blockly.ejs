@@ -143,7 +143,7 @@
         </div>
         
         <!--worlds-->
-        <div class="fullscreen worlds">
+        <div class="fullscreen worlds" style="display: none">
             <!--links-->
             <div class="links">
                 <a data-use="fullscreen">📺</a> |
@@ -154,7 +154,7 @@
         </div>
         
         <!--courtain-->
-        <div class="fullscreen courtain">
+        <div class="fullscreen courtain" style="display: none">
             <!--content-->
             <div class="content">
                 <!-- <span>the</span> -->
@@ -217,7 +217,9 @@
        <!--world generator-->
        <script src="/js/algorithm/world.js"></script>
        <!--level generator-->
+       
        <script src="/js/algorithm/level.js"></script>
+       <script> LEVEL.inject(2, 1) </script>
        <!--elements-->
        <script src="/js/algorithm/elements.js"></script>
        <!--parallax-->
@@ -269,9 +271,9 @@
        
        <!--link handlers-->
        <script src="/libs/sweetalert2/sweetalert2.all.min.js"></script>
-       
+     
        <script src="/js/algorithm/fx.js"></script>
-       
+    
        <!--debug menu-->
        <script src="/js/algorithm/debug.js"></script>
        
@@ -331,7 +333,7 @@
 
         <div id='ui'>
 
-        <div id='playBtn'><img src='/assets/factory/playgame.png' alt='play game'></div>
+        <!-- <div id='playBtn'><img src='/assets/factory/playgame.png' alt='play game'></div> -->
         <div id="sfx-btn"><i class="fas fa-volume-up"></i></div>
         <div id="briefcase-btn"><i class="fas fa-briefcase"></i></div>
         <div id="camera-btn"><i class="fas fa-camera" img src='/src/images/a1.png'></i></div>

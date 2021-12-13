@@ -37,7 +37,12 @@
     left: 74vw;
     top: 39%;
 }
-
+/* hexlibrium */
+.worlds>.world:nth-child(6) {
+    left: 24vw;
+    top: 5%;
+}
+/* hexlibrium */
 .world-frame {
     position: absolute;
     width: 100%;

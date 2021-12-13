@@ -243,6 +243,7 @@ class GUI {
     // create the airPlane
     createAirPlane(x, y, z, direction, taken) {
         this.airPlane = new Textures.AirPlane()
+        // this.robot = new Textures.Robot()
 
         // set the position
         let coord = this.getCoordinates(x, z)

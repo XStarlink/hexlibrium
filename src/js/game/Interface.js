@@ -45,28 +45,62 @@
         document.body.appendChild(this.actionBtn);//added
 
         const fireBtn = document.createElement("div");
+        fireBtn.setAttribute('id', 'fire-btn')
         fireBtn.style.cssText = "position:absolute; bottom:55px; width:40px; height:40px; background:#FFFFFF; border:#444 solid medium; border-radius:50%; left:50%; transform:translateX(-50%);";
         fireBtn.addEventListener('mousedown', this.fire.bind(this, true));
         fireBtn.addEventListener('mouseup', this.fire.bind(this, false));
         document.body.appendChild(fireBtn);
 
         const getBtn = document.createElement("div");
+        getBtn.setAttribute('id', 'get-btn')
         getBtn.style.cssText = "position:absolute; bottom:55px; width:40px; height:40px; background:#FFFFFF; border:#444 solid medium; border-radius:50%; left:60%; transform:translateX(-50%);";
         getBtn.addEventListener('mousedown', this.getter.bind(this, true));
         getBtn.addEventListener('mouseup', this.getter.bind(this, false));
         document.body.appendChild(getBtn);
 
         const setBtn = document.createElement("div");
+        setBtn.setAttribute('id', 'set-btn')
         setBtn.style.cssText = "position:absolute; bottom:55px; width:40px; height:40px; background:#FFFFFF; border:#444 solid medium; border-radius:50%; left:40%; transform:translateX(-50%);";
         setBtn.addEventListener('mousedown', this.setter.bind(this, true));
         setBtn.addEventListener('mouseup', this.setter.bind(this, false));
         document.body.appendChild(setBtn);
 
+        const windowBtn = document.createElement("div");
+        windowBtn.setAttribute('id', 'set-btn')
+        windowBtn.style.cssText = "position:absolute; name: home; top:5%; width:60px; height:60px; background:#000000; border:#444 solid medium; border-radius:50%; right:5%; transform:translateX(-50%);";
+        windowBtn.addEventListener('click', this.windowAction.bind(true));
+        // windowBtn.addEventListener('mouseup', this.windowAction.bind(this, false));
+        document.body.appendChild(windowBtn);
+
         //window
-        const windowBtn = document.getElementById('windowBtn');
-        windowBtn.style.cssText = "position:absolute; top:10%; width:40px; height:40px; background:#FFFFFF; border:#444 solid medium; border-radius:50%; right:10%; transform:translateX(-50%);";
-        windowBtn.addEventListener('click', this.windowAction.bind(this));
-        document.body.appendChild(windowBtn);//added
+        // const windowBtn = document.getElementById('div');
+        // windowBtn.setAttribute('id', 'windows-btn')
+        // windowBtn.style.cssText = "position:absolute; name: home; top:5%; width:60px; height:60px; background:#ff0000; border:#444 solid medium; border-radius:50%; right:5%; transform:translateX(-50%);";
+        // windowBtn.addEventListener('click', this.windowAction.bind(this));
+        // document.body.appendChild(windowBtn);//added
+
+       
+   
+    
+        if(window.location.href == 'http://localhost:1000/'){
+            console.log('awudhiuawd')
+            let setBtn = document.getElementById('set-btn')
+            let fireBtn = document.getElementById('fire-btn')
+            let getBtn = document.getElementById('get-btn')
+            let windowBtn = document.getElementById("windowBtn")
+            let petRow = document.getElementById('petsRow')
+            windowBtn.style.display = 'none'
+            setBtn.style.display = 'none'
+            fireBtn.style.display = 'none'
+            getBtn.style.display = 'none'
+            cameraBtn.style.display = 'none'
+            briefcaseBtn.style.display = 'none'
+            playBtn.style.display = 'none'
+            sfxBtn.style.display = 'none'
+            petRow.style.display = 'none'
+        }else{
+            console.log('rest') 
+        }
         
         //blockly
 
@@ -229,7 +263,7 @@
         // })
 
 
-    //    var iframeBlockly = document.createElement('iframe')
+    //    var iframeBlockly = document.createElement('div')
 
     //    iframeBlockly.setAttribute('style', 'overflow: auto;', 'background: transparent') // width: 200%; height: 200%;
 
@@ -252,22 +286,22 @@
 
         
     //     var bhh = document.getElementById('bhh')
-    //     bhh.setAttribute('style', 'display:none;position: absolute;margin: auto;right:3%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
+    //     bhh.setAttribute('style', 'display:none; position: absolute; margin: auto; left:50%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
     //     var bjj = document.getElementById('bjj')
-    //     bjj.setAttribute('style', 'position: absolute;margin: auto;right:3%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
+    //     bjj.setAttribute('style', 'position: absolute;margin: auto;left:50%;background:coral;padding:10px;border: none;border-radius: 5px;top:3%;border: 2px solid chocolate;font-weight: 900;color:#fff;')
 
     //     iframeBlockly.style.cssText = 'position:absolute; top:1%; background:#FFFFFF; border:#444 solid medium; left:1%;'
     //     //iframeBlockly.src = 'http://localhost:3000/src/html/blockly.html'
-    //     //iframeBlockly.src = '/src/html/blockly.html'
-    //     iframeBlockly.className = 'iframeBlock'
-    //     iframeBlockly.style.display = 'none'
-    //     iframeBlockly.setAttribute("width", "50%")
-    //     iframeBlockly.setAttribute("height", "20%")
+        
+    //     // iframeBlockly.className = 'iframeBlock'
+    //     // iframeBlockly.style.display = 'none'
+    //     // iframeBlockly.setAttribute("width", "50%")
+    //     // iframeBlockly.setAttribute("height", "20%")
 
       
 
-    //     console.log(iframeBlockly)
-    //     document.body.appendChild(iframeBlockly)
+    //     // console.log(iframeBlockly)
+    //     // document.body.appendChild(iframeBlockly)
 
 
     //     bhh.addEventListener('click', function(){
@@ -291,6 +325,8 @@
     //         bhh.style.display = 'block'
     //         bjj.style.opacity = 1
     //         },400)
+
+    //         window.location.href = 'http://localhost:1000/blockly'
             
     //     })
 
@@ -518,7 +554,18 @@
 
     
     windowAction(){
-        if (this.game.active) this.game.controller.windowGate();
+        // if (this.game.active) this.game.controller.windowGate();
+
+            //hexlibrium
+            // let lv5 = document.querySelectorAll('.level')
+            // let name = document.querySelectorAll('.name')
+            // if(name[0].textContent == 'Impossible Ocean'){
+            //     lvl[1].addEventListener('click',(e)=>{
+            //         e.preventDefault()
+                    window.location.href = 'http://localhost:1000/'
+                // })
+            // }
+            //hexlibrium
     }
 
 

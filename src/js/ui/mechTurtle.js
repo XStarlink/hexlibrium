@@ -6,7 +6,7 @@ const texturesData = {
         pink: 0xF5986E,
         brown: 0x59332e,
         brownDark: 0x23190f,
-        red: 'red',
+        red: 'yellow',
 
         darkgray: "#515A5A",
         lightgray: "#707B7C"
@@ -17,14 +17,14 @@ const texturesData = {
 // contains all the preloaded geometries/materials and the sprites classes
 const Textures = {
     PilotGeometries: {
-        bodyGeom: new THREE.BoxGeometry(15, 15, 15),
-        faceGeom: new THREE.BoxGeometry(10, 10, 10),
-        hairGeom: new THREE.BoxGeometry(4, 4, 4),
-        hairSideGeom: new THREE.BoxGeometry(12, 4, 2),
-        hairBackGeom: new THREE.BoxGeometry(2, 8, 10),
-        glassGeom: new THREE.BoxGeometry(5, 5, 5),
-        glassAGeom: new THREE.BoxGeometry(11, 1, 11),
-        earGeom: new THREE.BoxGeometry(2, 3, 2)
+        // bodyGeom: new THREE.BoxGeometry(15, 15, 15),
+        // faceGeom: new THREE.BoxGeometry(10, 10, 10),
+        // hairGeom: new THREE.BoxGeometry(4, 4, 4),
+        // hairSideGeom: new THREE.BoxGeometry(12, 4, 2),
+        // hairBackGeom: new THREE.BoxGeometry(2, 8, 10),
+        // glassGeom: new THREE.BoxGeometry(5, 5, 5),
+        // glassAGeom: new THREE.BoxGeometry(11, 1, 11),
+        // earGeom: new THREE.BoxGeometry(2, 3, 2)
     },
     PilotMaterials: {
         bodyMat: new THREE.MeshPhongMaterial({
@@ -352,6 +352,112 @@ const Textures = {
             this.mesh.castShadow = !translucent
         }
     },
+
+  
+    Robot: class {
+        constructor() {
+            this.blocks = []
+
+            this.mesh = new THREE.Object3D();
+            this.mesh.name = "robot";
+
+            var loader = new THREE.GLTFLoader()//.setPath(`${this.assetsPath}glb/`);
+            
+            //this.loadingBar.visible = true;
+            
+            // Load a glTF resource
+            loader.load(
+                // resource URL
+                '/assets/glb/IT.glb',
+                // called when the resource is loaded
+                gltf => {
+    
+                    this.mesh.add( gltf.scene );
+                    this.it = gltf.scene;
+    
+                    this.it.position.set(-0.3,-0.05,1); //(0,-3,-4.5);
+                    this.it.scale.set(0.03,0.03,0.03); //(0,-3,-4.5);
+        
+                    gltf.scene.traverse( child => {
+                        if (child.isMesh){
+            
+                                    child.castShadow = true;
+                                    child.receiveShadow = true;
+    
+                        }
+                    });
+    
+                },
+
+            );
+           
+
+            // this.propeller.add(blade1);
+            // this.propeller.add(blade2);
+            // this.propeller.position.set(60, 0, 0);
+            // this.mesh.add(this.propeller);
+
+      
+            // this.pilot = new Textures.Pilot();
+            // this.pilot.mesh.position.set(-10, 27, 0);
+            // this.mesh.add(this.pilot.mesh);
+
+            // var popUp = new THREE.Mesh(Textures.AirPlaneGeometries.popUpGeom, new THREE.MeshBasicMaterial({
+            //     color: 0xffff00
+            // }))
+            // var border = new THREE.Mesh(Textures.AirPlaneGeometries.popUpBorderGeom, new THREE.MeshBasicMaterial({
+            //     color: 0x23190f
+            // }))
+            // popUp.add(border)
+            // border.position.set(0, 0, -1)
+            // popUp.position.set(0, 40, 0)
+            // this.mesh.add(popUp)
+            // this.popUp = popUp
+            // popUp.scale.set(0.01, 0.01, 0.01)
+            // popUp.visible = false
+
+
+
+
+
+        }
+
+        // updatePropeller() {
+        //     this.propeller.rotation.x += 0.3;
+        // }
+
+        // setBlock(mesh) {
+        //     this.popBlock()
+        //     this.block = mesh
+        //     this.mesh.add(mesh)
+        // }
+
+        // popBlock() {
+        //     if (this.block) {
+        //         this.mesh.remove(this.block)
+        //         let block = this.block
+        //         this.block = undefined
+        //         return block
+        //     }
+        // }
+
+        // static setColor(color) {
+        //     ['matCockpit', 'matTailPlane', 'matSideWing', 'wheelProtecMat', 'suspensionMat']
+        //         .forEach(value => Textures.AirPlaneMaterials[value].color.set(color))
+        // }
+    },
+    CellGeometries: {
+        geometry: new THREE.BoxBufferGeometry(108, 4, 108)
+    },
+    CellMaterials: {
+        mat1: new THREE.MeshPhongMaterial({
+            color: texturesData.colors.darkgray
+        }),
+        mat2: new THREE.MeshPhongMaterial({
+            color: texturesData.colors.lightgray
+        }),
+    },
+    
     // load some setting
     load: function () {
         Textures.PilotGeometries.hairGeom.applyMatrix(new THREE.Matrix4().makeTranslation(0, 2, 0));
@@ -381,80 +487,7 @@ const Textures = {
 
 
         
-            const loader = new GLTFLoader( )//.setPath(`${this.game.assetsPath}glb/`);
-            const dracoLoader = new DRACOLoader();
-            dracoLoader.setDecoderPath( '/libs5/three128/draco/' );
-            loader.setDRACOLoader( dracoLoader );
-            
-            // Load a glTF resource
-            loader.load(
-                // resource URL
-                '/assets/glb/RobotExpressive.glb',
-                // called when the resource is loaded
-                gltf => {
-         
-                    this.root.add( gltf.scene );
-                    this.object = gltf.scene;
-                    
-                    this.object.castShadow = true; //added
-                    this.object.name = "Character"; //added
-         
-                    this.object.frustumCulled = false;
-         
-                    const scale = 0.02;
-                    this.object.scale.set(scale, scale, scale);
-         
-                   
-         
-                    this.object.traverse( child => {
-                        if ( child.isMesh){
-                            child.castShadow = true;
-                            child.frustumCulled = false;
-                            //if (child.name.includes('Thumb2.R_end')) this.rifle = child; //Rifle  Thumb2.R_end
-                        }
-                    });
-         
-                    // if (this.rifle){
-                    //     const geometry = new BufferGeometry().setFromPoints( [ new Vector3( 0, 0, 0 ), new Vector3( 1, 0, 0 ) ] );
-         
-                    //     const line = new Line( geometry );
-                    //     line.name = 'aim';
-                    //     line.scale.x = 50;
-         
-                    //     this.rifle.add(line);
-                    //     line.position.set(0, 0, 0.5);
-                    //     this.aim = line;
-                    //     line.visible = false;
-                    // }
-         
-                    // this.animations = {};
-         
-                    // gltf.animations.forEach( animation => {
-                    //     this.animations[animation.name.toLowerCase()] = animation;
-                    // })
-         
-                    // const mixer = new AnimationMixer(gltf.scene);
-         
-                    // mixer.addEventListener('Idle', function(){ //added
-                    //     const action = 'Death'; //added
-                    //     //this.game.ui.toggleBriefcase();
-                    // })
-                
-                    // action = 'Yes'; 
-         
-                    // const ready = true;
-         
-                    //this.game.startRendering();
-                },
-                // // called while loading is progressing
-                // xhr => {
-                //     this.loadingBar.update( 'user', xhr.loaded, xhr.total );
-                // },
-                // // called when loading has errors
-                // err => {
-                //     console.error( err );
-                // }
-            );
+   
                
         
     }

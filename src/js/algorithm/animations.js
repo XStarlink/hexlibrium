@@ -9,6 +9,14 @@ const ANIMATIONS = {
         paused: true
     }),
 
+    robotAnimation: TweenMax.to(ELEMENTS['COURTAIN']['ROBOT'], 3, {
+        yoyoEase: Power1.easeInOut,
+        ease: Power1.easeOut,
+        top: '97%',
+        repeat: -1,
+        paused: true
+    }),
+
     // courtain content animation
     animateContent() {
         return new Promise(resolve => {
@@ -23,11 +31,24 @@ const ANIMATIONS = {
                 })
                 // plane animation
                 .to(ELEMENTS['COURTAIN']['PLANE'], this.time, {
-                    'top': '50%',
-                    'left': '60%',
+                    'top': '30%',
+                    'left': '20%',
                     'ease': Power3.easeOut,
                     onComplete: () => ANIMATIONS.aviatorAnimation.play()
                 })
+                // plane animation
+                .to(ELEMENTS['COURTAIN']['ROBOT'], this.time, {
+                'top': '100%',
+                'left': '80%',
+                'ease': Power3.easeOut,
+                onComplete: () => ANIMATIONS.robotAnimation.play()
+                })
+                // // plane animation
+                // .to(ELEMENTS['COURTAIN']['MUNDO'], this.time, {
+                // 'transform': 'translate(-50%, -50%) scale(0.7) rotate(60deg);',
+                // 'ease': Power3.easeOut,
+                // //onComplete: () => ANIMATIONS.robotAnimation.play()
+                // })
         })
     },
     // show courtain content
@@ -99,6 +120,7 @@ const ANIMATIONS = {
                     this.hideContent()
 
                     this.aviatorAnimation.pause()
+                    this.robotAnimation.pause()
 
                     resolve()
                 }
@@ -240,6 +262,7 @@ const ANIMATIONS = {
     // show home
     showHome() {
         this.aviatorAnimation.play()
+        this.robotAnimation.play()
         // show courtain
         return this.showCourtain()
     },

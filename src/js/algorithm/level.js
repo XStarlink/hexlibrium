@@ -25,7 +25,8 @@ const LEVEL = {
         return level
     },
     // inject levels in a given div
-    inject(div, n) {
+    
+    inject(div, n) { //div, n)
         // array of levels
         const array = []
 
@@ -37,6 +38,16 @@ const LEVEL = {
             array.push(el)
             div.appendChild(el)
         }
+        //hexlibrium
+        let lvl = document.querySelectorAll('.level')
+        let name = document.querySelectorAll('.name')
+        if(name[0].textContent == 'Aerospace Labyrinth'){
+            lvl[1].addEventListener('click',(e)=>{
+                e.preventDefault()
+                window.location.href = 'http://localhost:1000/hexlibrium'
+            })
+        }
+        //hexlibrium
 
         return array
     }

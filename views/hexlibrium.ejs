@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>hexlibrium</title>
+    <link rel="icon" href="favicon/icon.svg">
+    <!--blocky ------------------------------------------------------------------------------------------------------------------------------------------------->  
+    
+    <!--blocky ------------------------------------------------------------------------------------------------------------------------------------------------->  
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!--pleaserotate-->
+    <script>window.PleaseRotateOptions = { subMessage: '', allowClickBypass: false }</script>
+    <script src="/libs/pleaserotate/pleaserotate.min.js"></script>
+   
+    <script>
+        function toggleFullScreen() {
+            var doc = window.document;
+            var docEl = doc.documentElement;
+
+            var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+            var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+            if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+                requestFullScreen.call(docEl);
+            } else {
+                cancelFullScreen.call(doc);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--blocky ------------------------------------------------------------------------------------------------------------------------------------------------->   
+        
+    <div class="containerr" ></div>
+        <!--blocky ------------------------------------------------------------------------------------------------------------------------------------------------->     
+
+
+        <!-- dapp -->
+
+        <div class="container" style="position:absolute; bottom:0%; width:50%; height:50%;  display: block">
+            <div class="row" >
+              <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <!-- <h1 class="text-center">Hexlibrium</h1> -->
+                <!-- <hr/> -->
+                <br/>
+              </div>
+            </div>
+      
+            <div id="petsRow" class="row"  >
+              <!-- PETS LOAD HERE -->
+            </div>
+          </div>
+      
+          <div id="petTemplate" style="display: none">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="panel panel-default panel-pet">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Scrappy</h3>
+                </div>
+                <div class="panel-body" >
+                  <img alt="72x72" data-src="holder.js/72x72" class="img-rounded img-center" style="width: 50%; " src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+                  <br/><br/>
+                  <strong>Name</strong>: <span class="pet-breed">Golden Retriever</span><br/>
+                  <strong>Age</strong>: <span class="pet-age">3</span><br/>
+                  <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
+                  <button class="btn btn-default btn-adopt" type="button" data-id="0">GET this NFT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="/dapp/bootstrap.min.js"></script>
+          <script src="/dapp/web3.min.js"></script>
+          <script src="/dapp/truffle-contract.js"></script>
+          <script src="/dapp/app.js"></script>
+
+     
+        <!-- dapp -->
+
+        <div id='ui'>
+
+        <div id='playBtn'><img src='/assets/factory/playgame.png' alt='play game'></div>
+        <div id="sfx-btn"><i class="fas fa-volume-up"></i></div>
+        <div id="briefcase-btn"><i class="fas fa-briefcase"></i></div>
+        <div id="camera-btn"><i class="fas fa-camera" img src='/src/images/a1.png'></i></div>
+        <div id="action-btn"><i class="fas fa-hand-point-up"></i></div>
+        <!-- <div id="windowBtn"><i class="fas fa-window"></i></div> -->
+
+        <script>
+            
+            var level = document.querySelectorAll('.level')
+            if(level[11]){
+                level[11].addEventListener('click', ()=>{
+             
+                window.location.href = '/hexlibrium'
+            })
+            console.log(level)
+            }
+            
+                    </script>
+
+        <script type="module">
+            import { Hex } from '/js/game/Hexlibrium.js';
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const game = new Hex(); 
+                window.game = game;
+            });
+        </script>
+    </div>
+
+   
+</body>
+
+</html>
