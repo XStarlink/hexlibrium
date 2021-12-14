@@ -46,8 +46,9 @@ const LEVEL = {
         if(name[0].textContent == 'Aerospace Labyrinth'){
             lvl[1].addEventListener('click',(e)=>{
                 e.preventDefault()
-                window.location.href = 'https://hexlibrium.com/hexlibrium'
+                window.location.href = 'http://hexlibrium.com/hexlibrium'
                 // window.location.href = 'http://localhost:1000/hexlibrium'
+                
             })
         }
         //hexlibrium
