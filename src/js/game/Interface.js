@@ -292,7 +292,7 @@
 
         iframeBlockly.style.cssText = 'position:absolute; top:1%; background:#FFFFFF; border:#444 solid medium; left:1%;'
         //iframeBlockly.src = 'http://localhost:1000/blockly'
-        iframeBlockly.src = 'https://hexlibrium.herokuapp.com/blockly'
+        iframeBlockly.src = 'https://hexlibrium.com/blockly'
 
         iframeBlockly.className = 'iframeBlock'
         iframeBlockly.style.display = 'none'
