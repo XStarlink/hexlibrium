@@ -21,7 +21,7 @@
 
 
 .worlds>.world:nth-child(12) {
-    transform: translate(-50%, -50%) scale(0.6);
+    transform: translate(-50%, -50%) scale(0.7);
     left: 50%;
     top: 15%;
 }
@@ -65,7 +65,7 @@
 
 
 .worlds>.world:nth-child(6) {
-    transform: translate(-50%, -50%) scale(0.3);
+    transform: translate(-50%, -50%) scale(0.5);
     left: 50%;
     top: 55%;
 }
@@ -162,6 +162,7 @@
 }
 
 .history{
+    visibility: visible;
     position: absolute;
     top:5%;
     right: 2.5%;
@@ -170,13 +171,19 @@
 
     color: #ffffff;
 
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     text-align: justify;
     font-weight: 22;
     font-family: 'Playfair Display';
+
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    outline-offset: 5px;
+    outline: 5px
 }
 
 .instructions{
+    visibility: hidden;
     position: absolute;
     top:5%;
     left: 2.5%;
@@ -185,8 +192,9 @@
 
     color: #ffffff;
 
-    font-size: 1.2vw;
+    font-size: 2vw;
     text-align: justify;
     font-weight: 22;
     font-family: 'Playfair Display';
 }
+

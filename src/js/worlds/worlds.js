@@ -2,7 +2,7 @@
 const Worlds = [
     {
         // world name
-        name: 'Beginners forest', //'Beginners\' \nforest',
+        name: 'Beginners river', //'Beginners\' \nforest',
         // world colors
         text: 'Once upon a time',
         colors: {

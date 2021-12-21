@@ -6,7 +6,7 @@
 }
 
 .worlds-chooser{
-    background-color: aliceblue;
+    background-color: blue;
 }
 
 /* view */
@@ -59,7 +59,17 @@
     top: 60px;
     width: 50vw;
     height: 20px;
-    font-size: 7vw;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text {
+    position: relative;
+    top: 50px;
+    width: 50vw;
+    height: 20px;
+    font-size: 5vw;
     text-align: center;
     font-weight: bold;
 }
