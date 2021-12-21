@@ -2,8 +2,9 @@
 const Worlds = [
     {
         // world name
-        name: 'Beginners\' \nforest',
+        name: 'Beginners forest', //'Beginners\' \nforest',
         // world colors
+        text: 'Once upon a time',
         colors: {
             // button hue
             hue: 225,
@@ -19,7 +20,7 @@ const Worlds = [
                 '#68c3c0' // light blue
             ]
         },
-        // stages
+        
         stages: [
             {
                 // level name
@@ -259,7 +260,7 @@ const Worlds = [
         ]
     },
     {
-        name: 'Programmers\' farm',
+        name: 'Programmers farm',
         colors: {
             // bottons hue
             hue: 175,
@@ -1167,7 +1168,7 @@ const Worlds = [
         },
         stages: [
             {
-                name: 'Sum the way',
+                name: 'Labirint 3',
                 description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
                 levels: [{
                     dimension: {
@@ -1410,7 +1411,7 @@ const Worlds = [
     },
 
     {
-        name: 'Aerospace Labyrinth',
+        name: 'Sirius star',
         colors: {
             hue: 340,
             title: '#7D669E',
@@ -1423,7 +1424,263 @@ const Worlds = [
         },
         stages: [
             {
-                name: 'Sum the way',
+                name: 'Labirint 4',
+                description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
+                levels: [{
+                    dimension: {
+                        width: 3,
+                        height: 7
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 2,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 10
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 6,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 9
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 7,
+                        blocks: [2]
+                    }],
+                }
+                ]
+            }
+        ]
+    },
+
+    {
+        name: 'Vibrant lake',
+        colors: {
+            hue: 340,
+            title: '#7D669E',
+            background: ['lightblue', '#f7d9aa'],
+            blocks: [
+                '#f7d9aa', // sand
+                '#80E9E7', // light blue    
+                '#7D669E' // violet
+            ]
+        },
+        stages: [
+            {
+                name: 'Labirint 5',
                 description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
                 levels: [{
                     dimension: {
@@ -1664,4 +1921,1296 @@ const Worlds = [
             }
         ]
     }
+
+    ,
+
+    {
+        name: 'Harmony wavelet ',
+        colors: {
+            hue: 340,
+            title: '#7D669E',
+            background: ['lightblue', '#f7d9aa'],
+            blocks: [
+                '#f7d9aa', // sand
+                '#80E9E7', // light blue    
+                '#7D669E' // violet
+            ]
+        },
+        stages: [
+            {
+                name: 'Labirint 6',
+                description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
+                levels: [{
+                    dimension: {
+                        width: 3,
+                        height: 7
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 2,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 10
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 6,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 9
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 7,
+                        blocks: [2]
+                    }],
+                }
+                ]
+            }
+        ]
+    }
+
+    ,
+
+    {
+        name: 'Fractal snow ',
+        colors: {
+            hue: 340,
+            title: '#7D669E',
+            background: ['lightblue', '#f7d9aa'],
+            blocks: [
+                '#f7d9aa', // sand
+                '#80E9E7', // light blue    
+                '#7D669E' // violet
+            ]
+        },
+        stages: [
+            {
+                name: 'Labirint 7',
+                description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
+                levels: [{
+                    dimension: {
+                        width: 3,
+                        height: 7
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 2,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 10
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 6,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 9
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 7,
+                        blocks: [2]
+                    }],
+                }
+                ]
+            }
+        ]
+    }
+
+    ,
+
+    {
+        name: 'Rain forest ',
+        colors: {
+            hue: 340,
+            title: '#7D669E',
+            background: ['lightblue', '#f7d9aa'],
+            blocks: [
+                '#f7d9aa', // sand
+                '#80E9E7', // light blue    
+                '#7D669E' // violet
+            ]
+        },
+        stages: [
+            {
+                name: 'Labirint 8',
+                description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
+                levels: [{
+                    dimension: {
+                        width: 3,
+                        height: 7
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 2,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 10
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 6,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 9
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 7,
+                        blocks: [2]
+                    }],
+                }
+                ]
+            }
+        ]
+    }
+
+    ,
+
+    {
+        name: 'Timeless mountain',
+        colors: {
+            hue: 340,
+            title: '#7D669E',
+            background: ['lightblue', '#f7d9aa'],
+            blocks: [
+                '#f7d9aa', // sand
+                '#80E9E7', // light blue    
+                '#7D669E' // violet
+            ]
+        },
+        stages: [
+            {
+                name: 'Labirint 9',
+                description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
+                levels: [{
+                    dimension: {
+                        width: 3,
+                        height: 7
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 2,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 10
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 6,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 9
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 7,
+                        blocks: [2]
+                    }],
+                }
+                ]
+            }
+        ]
+    }
+
+    ,
+
+    {
+        name: 'Aerospace Labyrinth',
+        colors: {
+            hue: 340,
+            title: '#7D669E',
+            background: ['lightblue', '#f7d9aa'],
+            blocks: [
+                '#f7d9aa', // sand
+                '#80E9E7', // light blue    
+                '#7D669E' // violet
+            ]
+        },
+        stages: [
+            {
+                name: 'Labirint 10',
+                description: "legend: <br>O - orange block<br>B - blue block<br>V - violet block<br>F - the final block (the translucent one)<br><br>There are some blue blocks between the 2 orange blocks.<br>The distance of the final block is equal to the sum of the value of all blue blocks.<br>The value of a blue block is given by its position (the first positon is after the orange block, the second one after the firts one and so on..)<br><br>Example:<br>_____F___<br>V________<br>_O_<n style='font-weight: bold'>B</n>_<n style='font-weight: bold'>B</n>O___<br>__1<n style='font-weight: bold'>2</n>3<n style='font-weight: bold'>4</n>____<br><br>the blue ones are in the second and in the fourth positon so the final block will be distant 2+4=6 blocks from the bottom",
+                levels: [{
+                    dimension: {
+                        width: 3,
+                        height: 7
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 2,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 10
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 6,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 12
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 3,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 7,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 9,
+                        blocks: [2]
+                    }],
+                },
+                {
+                    dimension: {
+                        width: 3,
+                        height: 9
+                    },
+                    aviator: {
+                        x: 0,
+                        y: 0,
+                        direction: 'up',
+                        taken: undefined
+                    },
+                    start: [{
+                        x: 0,
+                        y: 1,
+                        blocks: [0]
+                    },
+                    {
+                        x: 0,
+                        y: 2,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 4,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 5,
+                        blocks: [1]
+                    },
+                    {
+                        x: 0,
+                        y: 6,
+                        blocks: [0]
+                    },
+                    {
+                        x: 1,
+                        y: 0,
+                        blocks: [2]
+                    }
+                    ],
+                    end: [{
+                        x: 2,
+                        y: 7,
+                        blocks: [2]
+                    }],
+                }
+                ]
+            }
+        ]
+    }
+   
+   
 ]

@@ -8,7 +8,7 @@
 }
 
 .worlds {
-    background-image: linear-gradient(lightblue, rgb(247, 217, 170));
+    background-image: linear-gradient(rgb(64, 108, 144), rgb(64, 123, 144));
 }
 
 .world-container {
@@ -18,30 +18,91 @@
     top: 0;
 }
 
-.worlds>.world:nth-child(2) {
-    left: 3vw;
-    top: 17%;
+
+
+.worlds>.world:nth-child(12) {
+    transform: translate(-50%, -50%) scale(0.6);
+    left: 50%;
+    top: 15%;
 }
 
-.worlds>.world:nth-child(3) {
-    left: 24vw;
-    top: 44%;
+
+
+.worlds>.world:nth-child(11) {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 70%;
+    top: 25%;
+}
+
+.worlds>.world:nth-child(10) {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 30%;
+    top: 25%;
+}
+
+
+
+.worlds>.world:nth-child(9) {
+    transform: translate(-50%, -50%) scale(0.2);
+    left: 50%;
+    top: 35%;
+}
+
+
+/* hexlibrium */
+.worlds>.world:nth-child(8) {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 70%;
+    top: 45%;
+}
+
+.worlds>.world:nth-child(7) {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 30%;
+    top: 45%;
+}
+
+
+
+.worlds>.world:nth-child(6) {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 50%;
+    top: 55%;
+}
+
+
+
+
+.worlds>.world:nth-child(5) {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 70%;
+    top: 65%;
 }
 
 .worlds>.world:nth-child(4) {
-    left: 48vw;
-    top: 21%;
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 30%;
+    top: 65%;
 }
 
-.worlds>.world:nth-child(5) {
-    left: 74vw;
-    top: 39%;
+
+
+.worlds>.world:nth-child(3) {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 50%;
+    top: 75%;
 }
-/* hexlibrium */
-.worlds>.world:nth-child(6) {
-    left: 24vw;
-    top: 5%;
+
+.worlds>.world:nth-child(2) {
+    transform: translate(-50%, -50%) scale(0.5);
+    left: 50%;
+    top: 90%;
 }
+
+
+
+
+
 /* hexlibrium */
 .world-frame {
     position: absolute;
@@ -58,9 +119,9 @@
     width: 100%;
     height: 100%;
 
-    color: #2F4F4F;
+    color: #ffffff;
 
-    font-size: 2.5vw;
+    font-size: 5vw;
     text-align: center;
     font-weight: 1000;
 }
@@ -82,14 +143,14 @@
 
 .links>a {
     font-weight: normal;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
     line-height: 30px;
 }
 
 .links>a:active {
-    color: black;
+    color: #ffffff;
 }
 
 .links>a:visited {
@@ -98,4 +159,34 @@
 
 .links>a:hover {
     transform: scale(1.02);
+}
+
+.history{
+    position: absolute;
+    top:5%;
+    right: 2.5%;
+    width: 20%;
+    height: 100%;
+
+    color: #ffffff;
+
+    font-size: 1.2vw;
+    text-align: justify;
+    font-weight: 22;
+    font-family: 'Playfair Display';
+}
+
+.instructions{
+    position: absolute;
+    top:5%;
+    left: 2.5%;
+    width: 20%;
+    height: 100%;
+
+    color: #ffffff;
+
+    font-size: 1.2vw;
+    text-align: justify;
+    font-weight: 22;
+    font-family: 'Playfair Display';
 }

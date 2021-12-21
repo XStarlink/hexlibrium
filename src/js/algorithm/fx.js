@@ -1,3 +1,12 @@
+//pessoais//
+//sol(self), lua(inconsiente), venus(emoção), mercurio(mental), marte(acao)
+
+//medianeiros
+//jupter(expansão), saturno(contração)
+
+//traspessoais
+//urano(tranformação externo), nepturno(ilusão), plutão(tranformação interno)
+
 let resetted = false,
 currentStage = {}
 

@@ -2,10 +2,10 @@
 .courtain {
     background-color: rgb(35, 106, 148);
 
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
 
-    background-image: linear-gradient(rgb(42, 108, 144), rgb(64, 123, 144));
+    background-image: linear-gradient(rgb(64, 108, 144), rgb(64, 123, 144));
 
     /* background-image: url('/images/screens/worlds.png');
     background-size: cover; */
@@ -64,7 +64,7 @@
 .as {
     position: absolute;
     top: 5%;
-    left: 19.5%;
+    left: 50%;
     /* width: 14vw; */
 
     cursor: pointer;
@@ -74,7 +74,7 @@
 
 .lhc {
     position: absolute;
-    top: 90%;
+    top: 86%;
     left: 50%;
     /* width: 14vw; */
 
@@ -91,27 +91,32 @@
 }
 
 .title {
-    position: relative;
+    position: absolute;
     font-family: 'Playfair Display';
-    font-size: 12vw;
+    font-size: 24px;
+    font-style: bold;
     line-height: 1;
     margin: 0;
     letter-spacing: -0.025em;
-    color: #ffffff;
-    top: calc(50vh - 18vw);
-    margin-left: -70px;
+    color: #ff7700;
+    /* top: calc(50vh - 18vw); */
+    bottom: 5%;
+    /* margin-left: 50%; */
+    left: 50%;
     opacity: 0;
     text-align: center;
+    transform: translate(-50%, -50%) scale(1);
+    
 }
 
 
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     .title {
         font-size: calc(1200px / 100 * 22);
         top: calc(50vh - 1200px / 100 * 18);
     }
-}
+} */
 
 .title>span {
     font-size: 0.05em;
