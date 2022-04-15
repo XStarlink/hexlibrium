@@ -1,0 +1,16 @@
+{
+  "name": "hypercube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "fs": "^0.0.1-security",
+    "js": "^0.1.0"
+  }
+}
