@@ -623,17 +623,17 @@
             </div>
 
         <div id="world" class="mt-5">
-           <h1 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class="text-light text-center">THE WORLD GAME</h1>
+           <h1 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class="text-light text-center wordgame">THE WORLD GAME</h1>
                    
            <div style="display:flex; flex-direction:column;align-content:center;align-items: center;">
            
            <div style="color:#60337A;" class="text-center">
-                      <div>1. Each player lives in our own dimension and they are invited to travel through space/time to meet compatible people.</div>
-                      <div>2. In each dimension has ten planets thats brinc specificlly challenges that evolve specificlly tasks.</div>
-                      <div>3. Each planets has a specifically amount of platforms that challenge the players create strategies to expand your incomes.</div>
+                      <div class="each">1. Each player lives in our own dimension and they are invited to travel through space/time to meet compatible people.</div>
+                      <div class="indimension">2. In each dimension has ten planets thats brinc specificlly challenges that evolve specificlly tasks.</div>
+                      <div class="eachP">3. Each planets has a specifically amount of platforms that challenge the players create strategies to expand your incomes.</div>
                     </div>
 
-                    <img class="img-fluid text-center m-auto" src="images/diagramFull.png" alt="">
+                    <img class="img-fluid text-center m-auto diagramFull" src="images/diagramFull.png" alt="">
                     <img id="corte4" style="position:absolute;right:0;opacity:0.5;margin-bottom:0;" class="img-fluid imgAbsolute" src="images/corte4.png" alt="">
 
                   </div>
@@ -678,6 +678,46 @@ setInterval(() => {
     });
 });
 }, 2000);
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1500) {
+     $('.wordgame').show(2000)
+   } else {
+    $('.wordgame').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('.diagramFull').fadeIn(2000)
+   } else {
+    $('.diagramFull').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1380) {
+     $('.indimension').show(2500)
+   } else {
+    $('.indimension').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1380) {
+     $('.each').show(1500)
+   } else {
+    $('.each').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1380) {
+     $('.eachP').show(3500)
+   } else {
+    $('.eachP').hide('slow')
+   }
+});
 
 $(window).on("scroll", function () {
    if ($(this).scrollTop() > 500) {
@@ -760,8 +800,11 @@ $(window).on("scroll", function () {
 // });
 
 $(document).ready(function () {
-  
-    $('.titleInit1').fadeIn(1500)
+
+  $(window).on("load", function () {
+let d = document.querySelector('.titleInit1')
+d.style.display = 'none'
+    $('.titleInit1').fadeIn(2800)
      $('.titleInit1').css({
        'transform':"rotate3d(0, 1, 0,"+ 360+'deg)',
        'transition-property':'transform',
@@ -771,37 +814,43 @@ $(document).ready(function () {
     $('.titleInit1').css({
       'transform':"rotate3d(0, 0, 0,"+ 180+'deg)'
     })
+  })
+ 
    
-});
 
-$(window).on("scroll", function () {
-   if ($(this).scrollTop() > 800) {
-     $('.titleInit2').fadeIn(1500)
-   } else {
-    $('.titleInit2').fadeOut('slow')
-   }
-});
 
-$(window).on("scroll", function () {
-   if ($(this).scrollTop() > 800) {
-    $('.jorney').show(1500)
-     $('.jorney').css({
-          'transform':'scale('+1+')',
-          'transition-property':'transform',
-          'transition-duration':'0.5s'
+$(window).on("load", function () {
+  let t = document.querySelector('.titleInit2')
+  t.style.display = 'none'
+    $('.titleInit2').fadeIn(3000)
+     $('.titleInit2').css({
+       'transform':"rotate3d(0, 1, 0,"+ 360+'deg)',
+       'transition-property':'transform',
+       'transition-duration':'2s'
      })
-   } else {
-    $('.jorney').hide('slow')
-    $('.jorney').css({
-      'transfomr':'scale('+1+')',
-      'transition-property':'padding',
-      'transition-duration':'0.5s'
+    
+    $('.titleInit2').css({
+      'transform':"rotate3d(0, 0, 0,"+ 180+'deg)'
     })
-   }
+});
+
+$(window).on("load", function () {
+  let j = document.querySelector('.jorney')
+  j.style.display = 'none'
+  $('.jorney').fadeIn(3000)
+     $('.jorney').css({
+       'transform':"rotate3d(0, 1, 0,"+ 360+'deg)',
+       'transition-property':'transform',
+       'transition-duration':'2s'
+     })
+    
+    $('.jorney').css({
+      'transform':"rotate3d(0, 0, 0,"+ 180+'deg)'
+    })
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1500) {
+   if ($(this).scrollTop() > 1200) {
      $('.goals').fadeIn(3500)
    } else {
     $('.goals').fadeOut('slow')
@@ -857,7 +906,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1800) {
+   if ($(this).scrollTop() > 1550) {
      $('#corte3').show(3500)
    } else {
     $('#corte3').hide('slow')
@@ -865,7 +914,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 2100) {
+   if ($(this).scrollTop() > 1620) {
      $('#corte4').slideDown(3500)
    } else {
     $('#corte4').slideUp('slow')
@@ -873,7 +922,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 3500) {
+   if ($(this).scrollTop() > 2600) {
      $('#corte5').slideDown(2800)
    } else {
     $('#corte5').slideUp('slow')
@@ -881,7 +930,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 3500) {
+   if ($(this).scrollTop() > 2600) {
      $('#corte6').slideDown(3000)
    } else {
     $('#corte6').slideUp('slow')
@@ -889,7 +938,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 4300) {
+   if ($(this).scrollTop() > 3300) {
      $('#corte7').slideDown(3000)
    } else {
     $('#corte7').slideUp('slow')
@@ -897,7 +946,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 5000) {
+   if ($(this).scrollTop() > 4500) {
      $('#corte8').slideDown(3000)
    } else {
     $('#corte8').slideUp('slow')
@@ -906,21 +955,21 @@ $(window).on("scroll", function () {
 
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 5500) {
-     $('#corte9').slideDown(3000)
+   if ($(this).scrollTop() > 5000) {
+     $('#corte9').fadeIn(3000)
    } else {
-    $('#corte9').slideUp('slow')
+    $('#corte9').fadeOut('slow')
    }
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 5500) {
-     $('#corte10').slideDown(3000)
+   if ($(this).scrollTop() > 5000) {
+     $('#corte10').fadeIn(3000)
    } else {
-    $('#corte10').slideUp('slow')
+    $('#corte10').fadeOut('slow')
    }
 });
-
+});
 
             </script>
           
@@ -981,13 +1030,13 @@ $(window).on("scroll", function () {
 
           <div class="mt-4">
             <!-- Facebook -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/hexlibrium" target="_blank" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-twitter"></i></a>
             <!-- Dribbble -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/hexlibrium/" target="_blank" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-linkedin"></i></a>
             <!-- Twitter -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://t.me/hexlibrium" target="_blank" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-telegram"></i></a>
             <!-- Google + -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://discord.gg/NHaaFSAsBh" target="_blank" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-discord"></i></a>
             <!-- Linkedin -->
           </div>
         </div>
