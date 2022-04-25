@@ -20,12 +20,14 @@
     <!--blocky ------------------------------------------------------------------------------------------------------------------------------------------------->  
     <!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"> -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Outfit:wght@200&family=PT+Sans+Narrow&family=VT323&display=swap" rel="stylesheet">
     <!--pleaserotate-->
-    <script>window.PleaseRotateOptions = { subMessage: '', allowClickBypass: false }</script>
-    <script src="/libs/pleaserotate/pleaserotate.min.js"></script>
+    <!-- <script>window.PleaseRotateOptions = { subMessage: '', allowClickBypass: false }</script> -->
+    <!-- <script src="/libs/pleaserotate/pleaserotate.min.js"></script> -->
    
-    <script>
+    <!-- <script>
         function toggleFullScreen() {
             var doc = window.document;
             var docEl = doc.documentElement;
@@ -39,7 +41,7 @@
                 cancelFullScreen.call(doc);
             }
         }
-    </script>
+    </script> -->
 
 
 </head>
@@ -51,14 +53,14 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script> -->
     <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script> -->
-    <div id="galaxy"></div>
+    <!-- <div id="galaxy"></div> -->
     <!--blocky ------------------------------------------------------------------------------------------------------------------------------------------------->   
 
-        <div class="fullscreen game">
+        <!-- <div class="fullscreen game"> -->
             <!--split-->
-            <div class="split">
+            <!-- <div class="split"> -->
                 <!--blockly container-->
-                <div class="split-container">
+                <!-- <div class="split-container">
                     <div class="blockly-editor">
                         <div id="blockly-div"></div>
                         <xml id="toolbox" style="display: none">
@@ -90,41 +92,41 @@
                             <sep></sep>
                             <category name="Methods" colour="290" custom="PROCEDURE"></category>
                         </xml>
-                    </div>
+                    </div> -->
                     <!--controls menu-->
-                    <div class="game-controller">
+                    <!-- <div class="game-controller">
                         <div>
-                            <div class="game-button" data-use="back">🔙</div>
+                            <div class="game-button" data-use="back"></div>
                             <br>
-                            <div class="game-button" data-use="backward" data-tooltip="Backward">⏪</div>
-                            <div class="game-button" data-use="forward" data-tooltip="Forward">⏩</div>
+                            <div class="game-button" data-use="backward" data-tooltip="Backward"></div>
+                            <div class="game-button" data-use="forward" data-tooltip="Forward"></div>
                             <br>
-                            <div class="game-button" data-use="play" data-tooltip="Play/Pause">⏯</div>
-                            <div class="game-button" data-use="reset" data-tooltip="Load code">🔁</div>
+                            <div class="game-button" data-use="play" data-tooltip="Play/Pause"></div>
+                            <div class="game-button" data-use="reset" data-tooltip="Load code"></div>
                             <br>
-                            <div class="game-button" data-use="show-next" data-tooltip="Show next">⏭</div>
+                            <div class="game-button" data-use="show-next" data-tooltip="Show next"></div>
                             <div class="show-level" data-use="show-level">1/2</div>
-                            <div class="game-button" data-use="show-prior" data-tooltip="Show prior">⏮</div>
+                            <div class="game-button" data-use="show-prior" data-tooltip="Show prior"></div>
                         </div>
                         <div style="height: 100px"></div>
                     </div>
-                </div>
+                </div> -->
                 <!--game container-->
-                <div class="split-container">
+                <!-- <div class="split-container">
                     <div id="canvas" class="canvas"></div>
                 </div>
-            </div>
+            </div> -->
             <!--game menu-->
-            <div class="game-menu">
+            <!-- <div class="game-menu">
                 <div class="game-menu-world">
                     <div class="game-menu-image"></div>
-                </div>
+                </div> -->
                 <!--level inf-->
-                <div class="game-menu-container">
+                <!-- <div class="game-menu-container">
                     <span class="game-menu-level"> Level - 1 </span>
-                </div>
+                </div> -->
                 <!--board-->
-                <div class="game-menu-container">
+                <!-- <div class="game-menu-container">
                     <div class="game-menu-board">
                         <span class="board-name">Moves</span>
                         <div data-use="moves" class="board-moves">0</div>
@@ -137,13 +139,13 @@
                         <span class="board-name">Over</span>
                         <div data-use="over" class="board-color" style="background-color: whitesmoke"></div>
                     </div>
-                </div>
+                </div> -->
                 <!--buttons-->
-                <div class="game-menu-container">
+                <!-- <div class="game-menu-container">
                     <div class="game-menu-buttons">
                         <div class="game-button" data-use="info" data-tooltip="Level description">🛈</div>
-                        <div class="game-button" data-use="save" data-tooltip="Save the code">💾</div>
-                        <div class="game-button" data-use="restore" data-tooltip="Restore the code">✅</div>
+                        <div class="game-button" data-use="save" data-tooltip="Save the code"></div>
+                        <div class="game-button" data-use="restore" data-tooltip="Restore the code"></div>
                         <div class="slidecontainer">
                             <input data-tooltip="Speed" data-use="slider" type="range" min="1" max="10" value="1"
                                 class="slider">
@@ -151,24 +153,24 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!--worlds-->
-        <div class="fullscreen worlds">
+        <!-- <div class="fullscreen worlds"> -->
 
 
             <!--links-->
-            <div class="links">
+            <!-- <div class="links">
                 <a data-use="fullscreen">📺</a> |
-                <a data-use="home">home</a> |
+                <a data-use="home">home</a> | -->
                 <!-- <a data-use="tutorial" href="tutorial">tutorial</a> -->
                 <!-- <a data-use="tutorial" href="tutorial">NFT inventory</a> -->
    
-    
+<!--     
             </div>
 
   
-        </div>
+        </div> -->
 
         <!-- <hi class="history">Once upon a time, perhaps even an aeon ago, in a land now become a myth, a young man sat in
             deep reverie beside a great river. Our young man gazed out upon the sinuous, soft waves as they lapped the shores
@@ -191,29 +193,29 @@
             Ching.
         </hi> -->
 
-            <hi class="history">
+            <!-- <p class="history">
                 Welcome traveler! you are about to start a journey. In this universe you live in your own dimension! 
                 where you are invited to travel through those eleven planets in search for the fragments of the truth. 
                 This path is an invitation for you to learn new skills through the challenge of building new sustainable worlds.
                 Your goal is to create technology that allows you to generate energy, mining cryptocurrency and build infrastructure. 
                 For now teach your robots to build your reality and follow the magic turtle that is gonna give you in your nexts steps. 
                 Hopefully in the way you gonna meet new friends, Good Luck... 
-        </hi>
+            </p> -->
 
-        <hi class="instructions">
+        <!-- <p class="instructions">
 
             
-        </hi>
+        </p> -->
 
  
         
         <!--courtain-->
-        <div class="fullscreen courtain">
+        <!-- <div class="fullscreen courtain"> -->
             <!--content-->
-            <div class="content">
+            <!-- <div class="content"> -->
                 
                 <!-- <span>the</span> -->
-                <h1 class="title" style="display: block;">Click to START your journey!</h1> 
+                <!-- <h1 class="title" style="display: block;">Click to START your journey!</h1>  -->
                 
 
                 <!-- <span>Once upon a time, perhaps even an aeon ago, in a land now become a myth, a young man sat in
@@ -239,7 +241,7 @@
                     became arguably the most profound knowledge ever discovered by a human being. It became The I
                     Ching.
                     </span> -->
-                <image class="mundo img-fluid" src="/images/aviator/world.png"></image>
+                <!-- <image class="mundo img-fluid" src="/images/aviator/world.png"></image>
                 <image class="turtle img-fluid" src="/images/aviator/turtle.png"></image>
                 <image class="robot img-fluid" src="/images/aviator/robot.png"></image>
                 <image class="logo img-fluid" src="/images/aviator/logo.png"></image>
@@ -248,23 +250,23 @@
                 <image class="lhc img-fluid" src="/images/aviator/lhc.png"></image>
 
                
-        </div>
+        </div> -->
 
        
 
-        </div>
+        <!-- </div> -->
         
         <!--levels-->
-        <div class="fullscreen levels" style="display: none">
+        <!-- <div class="fullscreen levels" style="display: none"> -->
             <!--world view-->
-            <div class="world-view" >
-            </div>
+            <!-- <div class="world-view" >
+            </div> -->
             <!--level view-->
-            <div class="level-view" >
+            <!-- <div class="level-view" >
                 <div class="name" ></div>
                 <div class="levels-container" ></div>
             </div>
-        </div>
+        </div> -->
         
                <!--worlds json-->
        <script src="/js/worlds/jollycolor.js"></script>
@@ -345,21 +347,21 @@
 
         <!-- dapp -->
 
-        <div class="container" style="position:absolute; bottom:-10%; width:50%; height:50%; display: block">
+        <!-- <div class="container" style="position:absolute; bottom:-10%; width:50%; height:50%; display: block">
             <div class="row" >
-              <div class="col-xs-12 col-sm-8 col-sm-push-2" >
+              <div class="col-xs-12 col-sm-8 col-sm-push-2" > -->
                 <!-- <h1 class="text-center">Hexlibrium</h1> -->
                 <!-- <hr/> -->
-                <br/>
+                <!-- <br/>
               </div>
-            </div>
+            </div> -->
       
-            <div id="petsRow" class="row "  >
+            <!-- <div id="petsRow" class="row "  > -->
               <!-- PETS LOAD HERE -->
-            </div>
-          </div>
+            <!-- </div>
+          </div> -->
       
-          <div id="petTemplate" style="display: none">
+          <!-- <div id="petTemplate" style="display: none">
             <div class="col-sm-6 col-md-4 col-lg-3" >
               <div class="panel panel-default panel-pet" >
                 <div class="panel-heading" >
@@ -376,7 +378,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
       
           <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
           
@@ -390,14 +392,14 @@
      
         <!-- dapp -->
 
-        <div id='ui'>
+        <!-- <div id='ui'>
 
         <div id='playBtn'><img src='/assets/factory/playgame.png' alt='play game'></div>
         <div id="sfx-btn"><i class="fas fa-volume-up"></i></div>
         <div id="briefcase-btn"><i class="fas fa-briefcase"></i></div>
         <div id="camera-btn"><i class="fas fa-camera" img src='/src/images/a1.png'></i></div>
         <div id="action-btn"><i class="fas fa-hand-point-up"></i></div>
-        <div id="windowBtn"><i class="fas fa-window"></i></div>
+        <div id="windowBtn"><i class="fas fa-window"></i></div> -->
 <!-- 
         <script>
             
@@ -420,26 +422,41 @@
                 window.game = game;
             });
         </script> -->
-    </div>
+    <!-- </div> -->
 
-
-    <div class="bg-light" style="display:block; width:100%;position:absolute; top:100%;">
+   
+    <div style="display:block; width:100%;background-color: #1163A5;z-index:1;">
         <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a style="color:#FF0078; font-weight:bold;font-family: 'Oswald', sans-serif;font-family: 'Outfit', sans-serif;font-family: 'PT Sans Narrow', sans-serif;font-family: 'VT323', monospace;font-size:50px;" class="navbar-brand" href="#">HEXLIBRIUM</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#overview">OVERVIEW</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#goals">GAME GOALS</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#world">THE WORLD GAME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#charachter">GAME CHARACHTER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#inspiration">INSPIRATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#history">HISTORY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
@@ -447,228 +464,501 @@
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="http://localhost:3000/NFTMarketPlace">Something else here</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
-                  </li>
+                  </li> -->
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+             <a class="btn" href="http://localhost:3000">   <button style="background-image: linear-gradient(#C12E89, #7345AD);text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 800;" class="btn text-light">MARKETPLACE</button> </a>
               </div>
             </div>
           </nav>
         </header>
 
-        <main>
-            <div class="d-flex flex-column align-items-center align-content-center justify-content-center" style="background-image: url('images/1680159.jpg'); height:500px;background-repeat: no-repeat;background-size:cover;background-position: center;">
-                    <div class="display-3 text-dark">lorem ipsum dolor sit am</div>
-                    <div class="display-4 text-dark">Lorem ipsum</div>
-                    <div class="display-5 text-dark">Lorem ipsum</div>
-                    <button class="btn btn-primary btn-lg">Play Now</button>
+        <main style="background-image:linear-gradient(#1163A5,#FBB6FD)">
+            <div class="d-flex flex-column align-items-center align-content-center justify-content-center" style="background-image: url('images/esta.png'); height:800px;background-repeat: no-repeat;background-size:cover;background-position: center;background-attachment: fixed;box-shadow: 10px 5px 5px black;">
+                    <div style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 800;" class="display-5 text-light titleInit1">Blockchain game to visual learners</div>
+                    <div style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 800;" class="display-5 text-light titleInit2">To earn by code mathmagically</div>
+                    <button style="background-color:#FF0078;text-shadow: 2px 4px 3px rgba(0,0,0,0.3);margin-top:20%;" class="btn btn-lg text-light mt-5 jorney">Start your jorney</button>
             </div>
 
-            <div class="container mt-5" style="display:flex; justify-content:space-evenly;align-items:center">
+            <style>
+          
 
+              @media (max-width: 863px)
+          {
+            .bgg
+             {
+              height: 700px;
+             }
+          }
 
-                <div class="text-center">
-                    <img class="img-fluid" src="images/i1.png" alt="">
-                    <div class='text-dark text-center'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
-                </div>
+              @media (max-width: 863px)
+          {
+            .imgAbsolute
+             {
+              height: 200px !important;
+             }
+          }
 
-                <div class="text-center">
-                    <img class="img-fluid" src="images/i2.png" alt="">
-                    <div class='text-dark text-center'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
-                </div>
+          @media (max-width: 689px)
+          {
+            .imgsacred
+             {
+              height: 150px !important;
+             }
+          }
 
-                <div class="text-center">
-                    <img class="img-fluid" src="images/i3.png" alt="">
-                    <div class='text-dark text-center'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
-                </div>
- </div>
-                <div class="container mt-5" style="display:flex; justify-content:space-evenly;align-items:center">
-                <div class="text-center">
-                    <img class="img-fluid" src="images/i4.png" alt="">
-                    <div class='text-dark text-center'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
-                </div>
+@media (max-width: 685px)
+          {
+          .hist{
+              width:70% !important;
+              align-self: center !important;
+              text-align:justify !important;
+             }
+          }
+         
+        
+          @media (max-width: 491px)
+          {
+          .hist{
+              width:80% !important;
+              align-self: center !important;
+              text-align:justify !important;
+             }
+          }
 
-                <div class="text-center">
-                    <img class="img-fluid" src="images/i5.png" alt="">
-                    <div class='text-dark text-center'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
-                </div>
+          @media (max-width: 383px)
+          {
+            .bgg
+             {
+              height: 900px;
+             }
+          }
+
+      
+          .imgsacred{
+                height:200px;
+              }
+              .bgg{
+                height:600px;
+              }
+ .hist{
+                color:#60337A;
+                 width:70%;
+                 align-self:center;
+                 text-align:justify;
+              }
+          
+   
+            </style>
+
+            <div style="width:100%;height:800px;" class="bg-light">
+              <img id="corte1" style="float:left;opacity: 0.8;position: absolute;left:0;z-index:1;" class="img-fluid imgAbsolute" src="images/corte1.png" alt="">
+
+              <div style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
+                <h1 id="overview" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 800;color:#60337A;" class="text-center display-5">GAME OVERVIEW</h1>
+                <h1 id="details" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 600;color:#60337A;" class="text-center mt-5">GAME DETAILS</h1>
+                <div class="text-center mt-5">
+                  <p style="color:#60337A;" class="thegameExists">The game exists in a scenario of intergalactic expansion and collonization of new planets to the players lives </p> 
+               
+                  <p style="color:#60337A;" class="thegameExists">the adventure to experiment a coherent universe based in sacred geometry.</p>    
+                </div> 
+                <div style="display:flex; justify-content:center">
+                  <div id="humanDesign" style="display:flex;flex-direction:column;">
+                    <img class="imgsacred" class="img-fluid" src="images/triangleInvert.png" alt="">
+                    <div class="text-center mt-3" style="color:#60337A;">Human design element </div>
+                  </div>
                 
-                <div class="text-center">
-                    <img class="img-fluid" src="images/i6.png" alt="">
-                    <div class='text-dark text-center'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
-                </div>
-            </div>
-
-            
-            <div class="container d-flex mt-5 align-items-center align-content-center mb-5">
-
-                <div class="container">
-                    <img class="img-fluid w-75" src="images/flowerOfLife.png" alt="">
-                </div>
-
-                <div>
-                    <h1 class="'text-center mt-5">HEXLIBRIUM</h1>
-                    <div class="text-dark display-5">
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    </div>
-                </div>
-
-        </div>
-
-        <div class="w-100 mb-5 mt-5 p-4" style="background-image: url('images/02.jpg'); background-repeat: no-repeat;background-size: cover;background-position: center center;">
-            <div class="text-center">
-                <h2>Lorem ipsum</h2>
-            </div>
-
-            <div class='text-center'>
-               <p class="text-center"> lorem ipsum Lorem ipsum Lorem ipsum  lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-
-            <div class="mt-5" style="display:flex; flex-direction: row; justify-content:space-evenly; align-items:center;">
-                
-                <div class="card mb-5" style="width: 18rem;">
-                    <img class="card-img-top" src="images/nft/robot.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Robot</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
+                  <div id="sacredGeometry" style="display:flex;flex-direction:column;">
+                    <img class="imgsacred" class="img-fluid" src="images/metatron.png" alt="">
+                    <div class="text-center mt-3" style="color:#60337A;">Sacred geometry universe </div>
                   </div>
-
-
-                  <div class="card mb-5" style="width: 18rem;">
-                    <img class="card-img-top" src="images/nft/robot.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Robot</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-
-
-                  <div class="card mb-5" style="width: 18rem;">
-                    <img class="card-img-top" src="images/nft/robot.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Robot</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-
                   
+                  <div id="techele" style="display:flex;flex-direction:column;">
+                    <img class="imgsacred" class="img-fluid" src="images/triangle.png" alt="">
+                    <div class="text-center mt-3" style="color:#60337A;">Technology element</div>
                   </div>
-
-                  
-            </div>
-
-            <div class="d-flex flex-row mt-5 align-content-center align-items-center justify-content-evenly">
                 
-                <div class="w-50 text-center">
-                    <img class="img-fluid w-50" src="images/nft/robot.png" alt="">
                 </div>
 
-                <div class="d-flex flex-column w-50 align-content-center align-items-center">
-                    <h1>Lorem ipsum</h1>
-
-                    <div class="text-center">
-                        <div>Tier:<span>Lorem ipsum</span></div>
-                        <div>Tier:<span>Lorem ipsum</span></div>
-                        <div>Tier:<span>Lorem ipsum</span></div>
-                        <div>Tier:<span>Lorem ipsum</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column">
-                        <div class="d-flex flex-row align-items-center justify-content-center align-items-center">
-                        <img class="img-fluid w-25" src="images/nft/robot.png" alt="">
-                        <img class="img-fluid w-25" src="images/nft/robot.png" alt="">
-                        <img class="img-fluid w-25" src="images/nft/robot.png" alt="">
-                    </div>
-                        <p class="text-center">lorem psum lorem psum lorem psum lorem psum</p>
-                    </div>
-
+                <div class="mt-5 text-light text-center">
+                  <p style="color:#60337A;">Get your NFT personalized hologenetic profile to connect with your NFT core robot.</p>
                 </div>
-            </div>
-
-            <div class="d-flex flex-row mt-5 mb-5 align-content-center align-items-center justify-content-center">
+                  <img id="corte2" style="position:absolute;right:0;opacity:0.8;" class="img-fluid imgAbsolute" src="images/corte2.png" alt="">
+                </div>
                 
-              
-              <div class="d-flex flex-column w-50">
-                 
-
-                  <div class="d-flex flex-column text-center align-content-center align-items-center justify-content-center">
-                      <h1 class="display-1">Lorem ips</h1>
-                     
-                     <div><b>Tier:</b> lorem psum lorem psum lorem psum lorem psum </div>
-                     <div><b>Tier:</b> lorem psum lorem psum lorem psum lorem psum </div>
-                     <div><b>Tier:</b> lorem psum lorem psum lorem psum lorem psum </div>
-                     <div><b>Tier:</b> lorem psum lorem psum lorem psum lorem psum </div>
-
-                     <p>Lorem ipsum Lorem ipsumorem ipsum Lorem ipsumorem ipsum Lorem ipsumorem ipsum Lorem ipsum</p>
-                  </div>
-
-              </div>
-
-              <div class="w-50 text-center">
-                <img style="width:50%;" class="img-fluid img-thumbnail text-center" src="images/nft/robot.png" alt="">
-            </div>
-
+               
+               
           </div>
 
-          <div style="height:500px;background-image: url('images/yx.png');background-repeat: no-repeat;background-size:cover;background-position:center;" class="mt-5 mb-5 d-flex flex-column align-items-center align-content-center justify-content-center">
-              <h1 class="text-center">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h1>
-             
-              <div class="text-center">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
-            <button class="btn btn-success text-center" type="button">Play Now</button>
+          
+
+            <div id="goals" style="background-attachment: fixed;" class="mt-5">
+                    <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);" class="text-light text-center goals">GAME GOALS</h2>
+               
+              
+                  <div  style="display:flex;flex-direction:column;justify-content: center;background-attachment: fixed;">
+
+                    <img id="corte3" style="position:absolute;left:0;opacity:0.5;" class="img-fluid imgAbsolute" src="images/corte3.png" alt="">
+
+                    <div style="display:flex; align-items:center;align-content: center;justify-content:center;">
+                      <div class="text-light plano1t">1. Travel between dimensions to meet compatible people</div>
+                      <img style="height:300px;" class="img-fluid plano1" src="images/plano_1.png" alt="">
+                    </div>
+
+                    <div style="display:flex; align-items:center;align-content: center;justify-content:center;">
+                      <div class="text-light plano2t">2. Explore new planets to collect resources and build plattafoms</div>
+                      <img style="height:300px;" class="img-fluid plano2" src="images/plano_2.png" alt="">
+                    </div>
+
+                    <div style="display:flex; align-items:center;align-content: center;justify-content:center;">
+                      <div class="text-light plano3t">3. Teach your robots to mining cryptocurrency and mint your NFT`s creations</div>
+                      <img style="height:300px;" class="img-fluid plano3" src="images/plano_3.png" alt="">
+                    </div>
+                  
+                </div>
             </div>
 
-            <div class="mt-5 mb-5">
-              <h1 class="display-3 text-center">HEXLIBRIUM</h1>
+        <div id="world" class="mt-5">
+           <h1 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class="text-light text-center">THE WORLD GAME</h1>
+                   
+           <div style="display:flex; flex-direction:column;align-content:center;align-items: center;">
+           
+           <div style="color:#60337A;" class="text-center">
+                      <div>1. Each player lives in our own dimension and they are invited to travel through space/time to meet compatible people.</div>
+                      <div>2. In each dimension has ten planets thats brinc specificlly challenges that evolve specificlly tasks.</div>
+                      <div>3. Each planets has a specifically amount of platforms that challenge the players create strategies to expand your incomes.</div>
+                    </div>
 
-              <img src="" alt="" srcset="">
-              <img src="" alt="" srcset="">
-              <img src="" alt="" srcset="">
-              <img src="" alt="" srcset="">
+                    <img class="img-fluid text-center m-auto" src="images/diagramFull.png" alt="">
+                    <img id="corte4" style="position:absolute;right:0;opacity:0.5;margin-bottom:0;" class="img-fluid imgAbsolute" src="images/corte4.png" alt="">
+
+                  </div>
+                </div>
+                
+               
+
+                
+              <div style="height:600px;" class="bg-light">
+                <img id="corte5" style="position:absolute;left:0;opacity:1;margin-top:-15%;" class="img-fluid imgAbsolute" src="images/corte5.png" alt="">
+                <img id="corte6" style="position:absolute;right:0;opacity:1;" class="img-fluid imgAbsolute" src="images/corte6.png" alt="">
+
+                <div id="charachter" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
+                <h1 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center"> GAME CHARACHTER</h1>
+              <div style="color:#60337A; width:50%;" class="align-self-center text-center">It is a dialog between the magic being and the technological robot that represents the subconsiouness and consiouness mind suported by the I-ching advices that guides the players to a journey of selfknoledge.</div>
+              <div style="display:flex;justify-content:space-evenly;">
+              <img id="turtle1" class="img-fluid " src="images/personagem_tartaruga.png" alt="">
+              <img id="drone1" class="img-fluid " src="images/personagem_drone.png" alt="">
             </div>
-
-            <div class="mt-5 mb-5">
-              <h1 class="displat-3 text-center">Vision</h1>
-              <p class="text-center">lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum Lorem ipsum</p>
+          </div>
             </div>
+            <script>
 
-            <div class="mt-5 mb-5">
+setInterval(() => {
+  $(document).ready(function(){
+    $("#turtle1").ready(function(){
+        $("#turtle1").animate({marginTop: "-5px"});
+    });
+    $("#turtle1").ready(function(){
+        $("#turtle1").animate({marginTop: "5px"});
+    });
+});
+}, 1500);
+
+setInterval(() => {
+  $(document).ready(function(){
+    $("#drone1").ready(function(){
+        $("#drone1").animate({marginTop: "-5px"});
+    });
+    $("#drone1").ready(function(){
+        $("#drone1").animate({marginTop: "5px"});
+    });
+});
+}, 2000);
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 500) {
+     $('#corte1').fadeIn('slow')
+   } else {
+    $('#corte1').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 700) {
+     $('#corte2').slideDown('slow')
+   } else {
+    $('#corte2').slideUp('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1200) {
+     $('#overview').show('slow')
+   } else {
+    $('#overview').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 700) {
+     $('#details').show(1500)
+   } else {
+    $('#details').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 700) {
+     $('.thegameExists').fadeIn(3000)
+   } else {
+    $('.thegameExists').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 800) {
+     $('#humanDesign').slideDown(2800)
+   } else {
+    $('#humanDesign').slideUp('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 800) {
+     $('#sacredGeometry').show(2500)
+   } else {
+    $('#sacredGeometry').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 800) {
+     $('#techele').fadeIn(2500)
+   } else {
+    $('#techele').fadeOut('slow')
+   }
+});
+
+// $(window).on("scroll", function () {
+//    if ($(this).scrollTop() > 500) {
+//     $('.titleInit1').fadeIn(500)
+//      $('.titleInit1').css({
+//        'transform':"rotate3d(0, 1, 0,"+ 360+'deg)',
+//        'transition-property':'transform',
+//        'transition-duration':'0.5s'
+//      })
+//    } else {
+//     $('.titleInit1').fadeOut('slow')
+//     $('.titleInit1').css({
+//       'transform':"rotate3d(0, 0, 0,"+ 180+'deg)'
+//     })
+//    }
+// });
+
+$(document).ready(function () {
+  
+    $('.titleInit1').fadeIn(1500)
+     $('.titleInit1').css({
+       'transform':"rotate3d(0, 1, 0,"+ 360+'deg)',
+       'transition-property':'transform',
+       'transition-duration':'2s'
+     })
+    
+    $('.titleInit1').css({
+      'transform':"rotate3d(0, 0, 0,"+ 180+'deg)'
+    })
+   
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 800) {
+     $('.titleInit2').fadeIn(1500)
+   } else {
+    $('.titleInit2').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 800) {
+    $('.jorney').show(1500)
+     $('.jorney').css({
+          'transform':'scale('+1+')',
+          'transition-property':'transform',
+          'transition-duration':'0.5s'
+     })
+   } else {
+    $('.jorney').hide('slow')
+    $('.jorney').css({
+      'transfomr':'scale('+1+')',
+      'transition-property':'padding',
+      'transition-duration':'0.5s'
+    })
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1500) {
+     $('.goals').fadeIn(3500)
+   } else {
+    $('.goals').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('.plano1t').fadeIn(2500)
+   } else {
+    $('.plano1t').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('.plano1').fadeIn(2800)
+   } else {
+    $('.plano1').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('.plano2t').fadeIn(2800)
+   } else {
+    $('.plano2t').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('.plano2').fadeIn(3000)
+   } else {
+    $('.plano2').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('.plano3t').fadeIn(3000)
+   } else {
+    $('.plano3t').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('.plano3').fadeIn(3500)
+   } else {
+    $('.plano3').fadeOut('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 1800) {
+     $('#corte3').show(3500)
+   } else {
+    $('#corte3').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 2100) {
+     $('#corte4').slideDown(3500)
+   } else {
+    $('#corte4').slideUp('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3500) {
+     $('#corte5').slideDown(2800)
+   } else {
+    $('#corte5').slideUp('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3500) {
+     $('#corte6').slideDown(3000)
+   } else {
+    $('#corte6').slideUp('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 4300) {
+     $('#corte7').slideDown(3000)
+   } else {
+    $('#corte7').slideUp('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 5000) {
+     $('#corte8').slideDown(3000)
+   } else {
+    $('#corte8').slideUp('slow')
+   }
+});
+
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 5500) {
+     $('#corte9').slideDown(3000)
+   } else {
+    $('#corte9').slideUp('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 5500) {
+     $('#corte10').slideDown(3000)
+   } else {
+    $('#corte10').slideUp('slow')
+   }
+});
+
+
+            </script>
+          
+            <div style="height:600px;">
+              <img id="corte7" style="position:absolute;left:0;opacity:1;margin-top:-8%;" class="img-fluid imgAbsolute" src="images/corte7.png" alt="">
+                   <div id="inspiration" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
+                          <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center">INSPIRATION</h2>
+            
+                          <div style="color:#60337A; width:50%;" class=" text-center align-self-center">
+                            You are a traveler in search of discovering new worlds through the vast dimensional universe, in this journey you will be the challenge of a small mascot to improve your skills, in this magical journey you will see everything connected through I-ching. In this sense, C. West Churchman identified the I Ching as one of the first means of measuring complex systems. The book left a great legacy in Western mathematics that, coined by German mathematician Gottfried Wilhelm Leibniz, created the so-called new arithmetic that gave rise to computer science. "The I Ching is more connected to the unconscious than to the rational attitude of consciousness". wrote in 1949 the psychoanalyst Carl Jung, who used the book in analysis sessions. For physicist Niels Bohr, work is at the root of quantum physics, one of the main pillars of current science.
+                          </div>
+                          </div>
+                        </div>
+
+                        <div class="bg-light bgg">
+                          <img id="corte8" style="position:absolute;left:0;opacity:1;margin-top:0;" class="img-fluid imgAbsolute" src="images/corte8.png" alt="">
+<div id="history" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
+                          <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center mt-5 mb-5">HISTORY</h2>
+                          <div class="hist" style="" class="">
+                            Once upon a time, perhaps even an aeon ago, in a land now become a myth, a young man sat in deep reverie beside a great river, when all of a sudden a small turtle emerged and drawing itself proudly out of the water, sat down beside him to share his gentle contemplation.
+            Until finally our young man, evidently on the cusp of some great universal epiphany, exclaimed to the little turtle in a great and wondrous sigh:
+            “Ahh little one, what’s it all about then…?”
+            The young man gazed intently at the little creature’s back and the intricate interlocking patterns and plates of its shell drying in the spring sunshine. As he gazed, a strange thing began to occur to him — the more he looked, the more he understood the nature of his question. 
+            Slowly, almost imperceptibly, everything began to evanesce and disappear — first the turtle, then the cosmos, and finally the young man himself. It is said that when the young man regained consciousness several hours later the turtle was gone.
+            Ever since that day humanity has had a means of understanding every aspect within the universe. It was discovered in the interlacing patterns on a humble turtle’s back — and in time it became arguably the most profound knowledge ever discovered by a human being. It became The I-Ching.
+                
+          </div>
+        </div>
+                        </div>
+                
+              
+         
+
+            <div class="">
               <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class=" my-5">
+<div class="">
+  <img id="corte9" style="position:absolute;right:0;opacity:1;margin-top:-15%;" class="img-fluid imgAbsolute" src="images/corte9.png" alt="">
+  <img id="corte10" style="position:absolute;right:0;opacity:1;height:380px;" class="img-fluid imgAbsolute" src="images/corte10.png" alt="">
 
   <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
     <!-- Grid container -->
@@ -676,7 +966,7 @@
       <!--Grid row-->
       <div class="row mt-4">
         <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <div id="contact" class="col-lg-4 col-md-12 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-4">About company</h5>
 
           <p>
@@ -691,13 +981,13 @@
 
           <div class="mt-4">
             <!-- Facebook -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-youtube"></i></a>
             <!-- Dribbble -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-facebook"></i></a>
             <!-- Twitter -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-instagram-square"></i></a>
             <!-- Google + -->
-            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fa-brands fa-discord"></i></a>
             <!-- Linkedin -->
           </div>
         </div>
@@ -705,12 +995,7 @@
 
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
 
-          <div class="form-outline form-white mb-4">
-            <input type="text" id="formControlLg" class="form-control form-control-lg">
-            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
-          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
 
           <ul class="fa-ul" style="margin-left: 1.65em;">
             <li class="mb-3">
@@ -727,30 +1012,7 @@
             </li>
           </ul>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Opening hours</h5>
-
-          <table class="table text-center text-white">
-            <tbody class="font-weight-normal">
-              <tr>
-                <td>Mon - Thu:</td>
-                <td>8am - 9pm</td>
-              </tr>
-              <tr>
-                <td>Fri - Sat:</td>
-                <td>8am - 1am</td>
-              </tr>
-              <tr>
-                <td>Sunday:</td>
-                <td>9am - 10pm</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!--Grid column-->
+        
       </div>
       <!--Grid row-->
     </div>
@@ -780,6 +1042,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+var $root = $('html, body');
+
+$('a[href^="#"]').click(function () {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1500);
+
+    return false;
+});
+</script>
 </body>
 
 </html>
