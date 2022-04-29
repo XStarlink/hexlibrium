@@ -478,7 +478,7 @@
         </header>
 
         <main style="background-image:linear-gradient(#1163A5,#FBB6FD)">
-            <div class="d-flex flex-column align-items-center align-content-center justify-content-center" style="background-image: url('images/banner.png'); height:800px;background-repeat: no-repeat;background-size:cover;background-position: center center;background-attachment: fixed;box-shadow: 10px 5px 5px black;">
+            <div class="d-flex flex-column align-items-center align-content-center justify-content-center" style="background-image: url('images/bannerfull.png'); height:800px;background-repeat: no-repeat;background-size:cover;background-position: center center center center;background-attachment: fixed;box-shadow: 10px 5px 5px black;">
                     <div style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 800;" class="display-5 text-light titleInit1">Blockchain game to visual learners</div>
                     <div style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 800;" class="display-5 text-light titleInit2">To earn by code mathmagically</div> 
                    <a class="btn" href="/game"> <button style="background-color:#FF0078;text-shadow: 2px 4px 3px rgba(0,0,0,0.3);margin-top:20%;" class="btn btn-lg text-light mt-5 jorney">Start your jorney</button> </a>
@@ -548,6 +548,7 @@
               width:70% !important;
               align-self: center !important;
               text-align:justify !important;
+              
              }
           }
          
@@ -644,14 +645,14 @@
 
                       <div class="text-light plano2t d-flex align-content-center align-items-center justify-content-evenly w-100">
                         <p class="align-self-center w-25">Planets <br> Conquer and Colonize</p> 
-                         <img style="" class="img-fluid plano1 align-self-center m-auto" src="images/disco1.png" alt="">
+                         <img style="" class="img-fluid plano2 align-self-center m-auto" src="images/disco2.png" alt="">
                          <p class="align-self-center w-25">Explore New Planets <br> to collect resources and build plataforms</p> 
                        </div>
                       
 
                        <div class="text-light plano2t d-flex align-content-center align-items-center justify-content-evenly w-100">
                         <p class="align-self-center w-25">Plataform Collect and Build</p> 
-                         <img style="" class="img-fluid plano1 align-self-center m-auto" src="images/disco1.png" alt="">
+                         <img style="" class="img-fluid plano3 align-self-center m-auto" src="images/disco3.png" alt="">
                          <p class="align-self-center w-25">Teach your robots <br> to minning cryptocurrency and <br> mint your NFT's creations</p> 
                        </div>
                      
@@ -683,13 +684,13 @@
                 
                
 <div>
-  <h1 style="color:#60337A;text-shadow: 2px 4px 3px rgba(0,0,0,0.3);"  class="text-center mt-5 mb-5">LOREM IPSUM</h1>
-  <p style="color:#60337A;" class="text-center">lorem ipsum dolor sit amet, consectetur adipis</p>
-  <p style="color:#60337A;" class="text-center">lorem ipsum dolor sit amet, consectetur adipis</p>
-  <p style="color:#60337A;" class="text-center mb-5">lorem ipsum dolor sit amet, consectetur adipis</p>
+  <h1 style="color:#60337A;text-shadow: 2px 4px 3px rgba(0,0,0,0.3);"  class="text-center mt-5 mb-5 j1">LOREM IPSUM</h1>
+  <p style="color:#60337A;" class="text-center j3">lorem ipsum dolor sit amet, consectetur adipis</p>
+  <p style="color:#60337A;" class="text-center j4">lorem ipsum dolor sit amet, consectetur adipis</p>
+  <p style="color:#60337A;" class="text-center mb-5 j5">lorem ipsum dolor sit amet, consectetur adipis</p>
 
   <div class="d-flex justify-content-evenly">
-    <div class="card" style="width: 18rem;">
+    <div class="card j6" style="width: 18rem;">
       <img class="card-img-top" src="..." alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -706,7 +707,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card j7" style="width: 18rem;">
       <img class="card-img-top" src="..." alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -723,7 +724,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card j8" style="width: 18rem;">
       <img class="card-img-top" src="..." alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -796,6 +797,72 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3500) {
+     $('.j1').show(1500)
+   } else {
+    $('.j1').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3500) {
+     $('.j2').show(3000)
+   } else {
+    $('.j2').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3500) {
+     $('.j3').show(2500)
+   } else {
+    $('.j3').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3500) {
+     $('.j4').show(2000)
+   } else {
+    $('.j4').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3600) {
+     $('.j5').show('slow')
+   } else {
+    $('.j5').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3600) {
+     $('.j6').show('slow')
+   } else {
+    $('.j6').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3600) {
+     $('.j7').show('slow')
+   } else {
+    $('.j7').hide('slow')
+   }
+});
+
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 3600) {
+     $('.j8').show('slow')
+   } else {
+    $('.j8').hide('slow')
+   }
+});
+
+
+
+$(window).on("scroll", function () {
    if ($(this).scrollTop() > 1380) {
      $('.indimension').show(2500)
    } else {
@@ -860,7 +927,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 800) {
+   if ($(this).scrollTop() > 1000) {
      $('#humanDesign').slideDown(2800)
    } else {
     $('#humanDesign').slideUp('slow')
@@ -868,7 +935,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 800) {
+   if ($(this).scrollTop() > 1000) {
      $('#sacredGeometry').show(2500)
    } else {
     $('#sacredGeometry').hide('slow')
@@ -876,7 +943,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 800) {
+   if ($(this).scrollTop() > 1000) {
      $('#techele').fadeIn(2500)
    } else {
     $('#techele').fadeOut('slow')
@@ -958,7 +1025,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1250) {
+   if ($(this).scrollTop() > 1350) {
      $('.plano1t').fadeIn(2500)
    } else {
     $('.plano1t').fadeOut('slow')
@@ -966,7 +1033,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1250) {
+   if ($(this).scrollTop() > 1350) {
      $('.plano1').fadeIn(2800)
    } else {
     $('.plano1').fadeOut('slow')
@@ -974,7 +1041,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1250) {
+   if ($(this).scrollTop() > 1350) {
      $('.plano2t').fadeIn(2800)
    } else {
     $('.plano2t').fadeOut('slow')
@@ -982,7 +1049,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1250) {
+   if ($(this).scrollTop() > 1350) {
      $('.plano2').fadeIn(3000)
    } else {
     $('.plano2').fadeOut('slow')
@@ -990,7 +1057,7 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1250) {
+   if ($(this).scrollTop() > 1350) {
      $('.plano3t').fadeIn(3000)
    } else {
     $('.plano3t').fadeOut('slow')
@@ -998,8 +1065,8 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1250) {
-     $('.plano3').fadeIn(3500)
+   if ($(this).scrollTop() > 1350) {
+     $('.plano3').fadeIn(3200)
    } else {
     $('.plano3').fadeOut('slow')
    }
@@ -1071,9 +1138,27 @@ $(window).on("scroll", function () {
 });
 });
 
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 100) {
+     $('header').css({
+      'opacity':"1",
+       'transition-property':'opacity',
+       'transition-duration':'2s',
+       'z-index':'9999'
+     })
+   } else {
+    $('header').css({
+      'opacity':"0.6",
+       'transition-property':'opacity',
+       'transition-duration':'2s',
+       'z-index':'9999'
+    })
+   }
+});
+
             </script>
           
-            <div style="height:auto;">
+            <div style="height:auto;" class="mb-5 mt-5">
               <img id="corte7" style="position:absolute;left:0;opacity:1;margin-top:-8%;" class="img-fluid imgAbsolute" src="images/corte7.png" alt="">
                    <div id="inspiration" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
                           <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center ">INSPIRATION</h2>
@@ -1083,19 +1168,19 @@ $(window).on("scroll", function () {
                           </div>
                         </div>
 
-                        <div class="bgg">
+                        <div class="bgg mt-5 mb-5">
                           <img id="corte8" style="position:absolute;left:0;opacity:1;margin-top:0;" class="img-fluid imgAbsolute" src="images/corte8.png" alt="">
-<div id="history" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
+<div id="history" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;" class="mt-5">
                           <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center mb-5 ">HISTORY</h2>
-                          <div class="hist" style="color:#60337A;" class="text-light">
-                            Once upon a time, perhaps even an eon ago, in a land known as Aevum, it was split into four great rivers dominated by the four great creatures that are responsible for balancing the entire dimension. 
-                            One of the four magic being fascinated by a humble young human full of pure curiosity in search of a formula for your people stop their suffering the being decides to come to Aearth in the form of a turtle. 
-                            The young man, in an evidently universal epiphany, asked this being: Oh little one, what is that? 
-                            Rather to your surprise our humble tortoise has evolved the young in a full cycle and decided to share his gentle contemplation. 
-                            As the tortoise was twirling around the young man he noticed interlacing patterns on the back of the tortoise and how more he looked more him understood the nature of his question. 
-                            Suddle everything expresses itself geometrically first the tortoise after the cosmos and the young man saw a six dimensional hypercube arround him prejected from an 3x3 matrix in the turtle's shell.
-                            And everything slowly disappeared and was condensed in a green stone where the young man fall sleep in a deep tweenty one days of dream...
-                            Since that day, his people have been able to understand every aspect of the universe. and in time it became arguably the most profound knowledge ever discovered by a human being. It became the I Ching. 
+                          <div class="hist" style="color:#60337A;" class="text-light mb-5">
+                            Once upon a time, perhaps even an eon ago, in a land known as Aevum, it was split into four great rivers dominated by the four great creatures that are responsible for balancing the entire dimension. <br><br>
+                            One of the four magic being fascinated by a humble young human full of pure curiosity in search of a formula for your people stop their suffering the being decides to come to Aearth in the form of a turtle. <br><br>
+                            The young man, in an evidently universal epiphany, asked this being: Oh little one, what is that?  <br><br>
+                            Rather to your surprise our humble tortoise has evolved the young in a full cycle and decided to share his gentle contemplation. <br><br>
+                            As the tortoise was twirling around the young man he noticed interlacing patterns on the back of the tortoise and how more he looked more him understood the nature of his question. <br><br>
+                            Suddle everything expresses itself geometrically first the tortoise after the cosmos and the young man saw a six dimensional hypercube arround him prejected from an 3x3 matrix in the turtle's shell. <br><br>
+                            And everything slowly disappeared and was condensed in a green stone where the young man fall sleep in a deep tweenty one days of dream... <br><br>
+                            Since that day, his people have been able to understand every aspect of the universe. and in time it became arguably the most profound knowledge ever discovered by a human being. It became the I Ching. <br><br>
                             Now the turtle is trapped in this reality for disobeying the hierarchy of the four great rivers and is now kept in this form until it manages to find its way back which is only possible through the help of a pure heart being and our job is to bring back harmony through the evolution of the robot mind as a vehicle of consciousness from chaos to the cosmos
                 
           </div>
@@ -1105,7 +1190,7 @@ $(window).on("scroll", function () {
               
          
 
-            <div class="">
+            <div class="mt-5">
               <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="">
   <img id="corte9" style="position:absolute;right:0;opacity:1;margin-top:-15%;" class="img-fluid imgAbsolute" src="images/corte9.png" alt="">
