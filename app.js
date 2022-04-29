@@ -1,13 +1,72 @@
 //const cool = require('cool-ascii-faces');
 const express = require('express');
 const path = require('path');
+const Moralis = require('moralis/node');
+const request = require("request-promise");
+const fs = require('fs');
+
+const { chownSync } = require('fs');
+const axios = require('axios').default;
+
+
+const serverUrl = "https://j0lip0zao6vv.usemoralis.com:2053/server";
+const appId = "H4IUDMf6Zm1QYt16U1oIsLqDSLuooY7pJrI6LrI4";
+const masterKey = "Vlp0Dp6vQqJ4qVg2BCSXydaKbwxSMBqvjm21NINf";
+
+Moralis.start({ serverUrl, appId, masterKey })
+
+
+
 const PORT = process.env.PORT || 1000;
+
 
 express()
   .use(express.static(path.join(__dirname, 'src')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('view'))
+  .get('/login', (req, res) => res.render('moralis'))
+  .post('/login',express.urlencoded({extended: true}), async (req, res) =>{
+
+    let u = await req.body
+
+    // const buffer = Buffer.from(`${u.file}`, "base64");
+    // fs.writeFileSync(`${path.join(__dirname,'src/images/out.png')}`, buffer);
+
+    const image = u.file;
+    const file = new Moralis.File("image.png", { base64: image });
+    
+    const imageIPFS = await file.saveIPFS({useMasterKey:true});
+    console.log(imageIPFS)
+    res.render('moralis')
+  //   const options = {
+  //     uri:`http://localhost:1000/images/out.png` ,
+  //     resolveWithFullResponse: true,
+  //     encoding: null, // <-- this is important for binary data like images.
+  //   };
+
+  //   request(options)
+  //     .then((response) => {
+        
+  //       const data = Array.from(Buffer.from(response.body, "binary"));
+  //       const contentType = response.headers["content-type"];
+  //       const file = new Moralis.File("logo", data, contentType);
+  //       file.saveIPFS({useMasterKey:true}).then((res) => {
+  //         res.save()
+  //         return file.save();
+  //       })
+        
+  //     //file.save()
+  //     })
+  //     .then((file) =>{
+
+  //       console.log(file.url())
+  //       res.render('moralis')
+  //     }) 
+  //     .catch(console.error);
+
+  } )
+  .get('/game', (req, res) => res.render('index'))
   .get('/hexlibrium', (req, res)=> res.render('hexlibrium'))
   .get('/blockly', (req, res)=> res.render('blockly'))
   //.get('/cool', (req, res) => res.send(cool()))

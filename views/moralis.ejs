@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Vanilla Boilerplate</title>
+    <script src="https://unpkg.com/moralis@1.0.3/dist/moralis.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+  <body>
+    <h1>Moralis Hello World!</h1>
+
+    <button id="btn-login">Moralis Metamask Login</button>
+    <button id="btn-logout">Logout</button>
+
+    <form action="/login" method="post">
+        <input id="inputFileToLoad" type="file" onchange="encodeImageFileAsURL();" />
+        <input id="filew" type="text" name="file" id="">
+        <button>Upload File</button>
+    </form>
+    <div id="imgTest"></div>
+
+
+    <script>
+        const serverUrl = "https://j0lip0zao6vv.usemoralis.com:2053/server";
+const appId = "H4IUDMf6Zm1QYt16U1oIsLqDSLuooY7pJrI6LrI4";
+Moralis.start({ serverUrl, appId });
+
+async function login() {
+  let user = Moralis.User.current();
+  if (!user) {
+    user = await Moralis.authenticate({
+      signingMessage: "Log in using Moralis",
+    })
+      .then(function (user) {
+        console.log("logged in user:", user);
+        console.log(user.get("ethAddress"));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+}
+
+async function logOut() {
+  await Moralis.User.logOut();
+  console.log("logged out");
+}
+
+document.getElementById("btn-login").onclick = login;
+document.getElementById("btn-logout").onclick = logOut;
+
+
+function encodeImageFileAsURL() {
+
+var filesSelected = document.getElementById("inputFileToLoad").files;
+if (filesSelected.length > 0) {
+  var fileToLoad = filesSelected[0];
+
+  var fileReader = new FileReader();
+
+  fileReader.onload = function(fileLoadedEvent) {
+    var srcData = fileLoadedEvent.target.result; // <--- data: base64
+   
+    var newImage = document.createElement('img');
+    newImage.src = srcData;
+   let filew = document.getElementById('filew')
+    filew.value = newImage.src
+    console.log(filew.value)
+
+    document.getElementById("imgTest").innerHTML = newImage.outerHTML;
+    console.log("Converted Base64 version is " + document.getElementById("imgTest").innerHTML);
+  }
+  fileReader.readAsDataURL(fileToLoad);
+}
+}
+    </script>
+  </body>
+</html>

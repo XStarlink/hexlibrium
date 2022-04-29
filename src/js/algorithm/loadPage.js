@@ -9,5 +9,5 @@
                 ])
 
                 // add after the window has been loaded
-                // ELEMENTS['COURTAIN']['DIV'].onclick = () => HANDLER.hideCourtain()
+                ELEMENTS['COURTAIN']['DIV'].onclick = () => HANDLER.hideCourtain()
             })()
