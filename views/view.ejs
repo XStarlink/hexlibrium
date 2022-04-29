@@ -42,7 +42,96 @@
             }
         }
     </script> -->
+    <style>
+      body{ 
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+        font-weight: 800;
+      }
+    
+      .sacre
+     {
+      height: 250px;
+     }
+  header{
+    position:fixed;
+    width:100%;
+    opacity: 0.8;
+  }
+  @media screen and (max-width: 1414px) {
+.foo{ 
+  margin-top:20%;
+}
+}
 
+      @media (max-width: 863px)
+  {
+    .bgg
+     {
+      height: auto;
+     }
+  }
+
+      @media (max-width: 863px)
+  {
+    .imgAbsolute
+     {
+      height: 200px !important;
+     }
+  }
+
+  @media (max-width: 689px)
+  {
+    .imgsacred
+     {
+      height: 150px !important;
+     }
+  }
+
+@media (max-width: 685px)
+  {
+  .hist{
+      width:70% !important;
+      align-self: center !important;
+      text-align:justify !important;
+      height:auto;
+      
+     }
+  }
+ 
+
+  @media (max-width: 491px)
+  {
+  .hist{
+      width:80% !important;
+      align-self: center !important;
+      text-align:justify !important;
+     }
+  }
+
+  @media (max-width: 383px)
+  {
+    .bgg
+     {
+      height: 900px;
+     }
+  }
+
+
+  .imgsacred{
+        height:200px;
+      }
+      .bgg{
+        height:600px;
+      }
+.hist{
+        color:#60337A;
+         width:70%;
+         align-self:center;
+         text-align:justify;
+      }
+  
+
+    </style>
 
 </head>
 
@@ -507,91 +596,13 @@
               
             </div>
 
-            <style>
-              body{ 
-                text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-                font-weight: 800;
-              }
-          header{
-            position:fixed;
-            width:100%;
-            opacity: 0.8;
-          }
-
-              @media (max-width: 863px)
-          {
-            .bgg
-             {
-              height: 700px;
-             }
-          }
-
-              @media (max-width: 863px)
-          {
-            .imgAbsolute
-             {
-              height: 200px !important;
-             }
-          }
-
-          @media (max-width: 689px)
-          {
-            .imgsacred
-             {
-              height: 150px !important;
-             }
-          }
-
-@media (max-width: 685px)
-          {
-          .hist{
-              width:70% !important;
-              align-self: center !important;
-              text-align:justify !important;
-              
-             }
-          }
-         
-        
-          @media (max-width: 491px)
-          {
-          .hist{
-              width:80% !important;
-              align-self: center !important;
-              text-align:justify !important;
-             }
-          }
-
-          @media (max-width: 383px)
-          {
-            .bgg
-             {
-              height: 900px;
-             }
-          }
-
-      
-          .imgsacred{
-                height:200px;
-              }
-              .bgg{
-                height:600px;
-              }
- .hist{
-                color:#60337A;
-                 width:70%;
-                 align-self:center;
-                 text-align:justify;
-              }
-          
-   
-            </style>
+       
 
             <div style="width:100%;height:800px;" class="">
 
               <div style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
                 <!-- <h1 id="overview" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 800;color:#60337A;" class="text-center display-5">GAME OVERVIEW</h1> -->
-                <h1 id="details" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 600;" class="text-center mt-5 text-light">GAME DETAILS</h1>
+                <h1 id="details" style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);font-weight: 600;" class="text-center mt-5 text-light">GAME UNIVERSE</h1>
                 <div class="text-center mt-5">
                   <p class="thegameExists text-light">The game exists in a scenario of intergalactic expansion and collonization of new planets to the players lives </p> 
                
@@ -604,7 +615,7 @@
                   </div>
                 
                   <div id="sacredGeometry" style="display:flex;flex-direction:column;">
-                    <img class="imgsacred" class="img-fluid" src="images/2.png" alt="">
+                    <img class="sacre" class="imgsacred" class="img-fluid" src="images/2.png" alt="">
                     <div class="text-center mt-3 text-light">Sacred geometry universe </div>
                   </div>
                   
@@ -751,8 +762,9 @@
                 <h1 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center"> GAME CHARACHTER</h1>
               <div style=" width:50%;color:#60337A;" class="align-self-center text-center">It is a dialog between the magic being and the technological robot that represents the subconsiouness and consiouness mind suported by the I-ching advices that guides the players to a journey of selfknoledge. </div>
               <div style="display:flex;justify-content:space-evenly;">
-              <img id="turtle1" class="img-fluid " src="images/personagem_tartaruga.png" alt="">
-              <img id="drone1" class="img-fluid " src="images/personagem_drone.png" alt="">
+              <img style="width:15%;" id="turtle1"  class="img-fluid " src="images/personagem_tartaruga.png" alt="">
+              <img style="width:15%;" id="drone1" class="img-fluid " src="images/personagem_drone.png" alt="">
+              <img style="width:15%;" id="humanoid" class="img-fluid " src="images/personagem_humanoide.png" alt="">
             </div>
           </div>
             </div>
@@ -769,6 +781,8 @@ setInterval(() => {
 });
 }, 1500);
 
+
+
 setInterval(() => {
   $(document).ready(function(){
     $("#drone1").ready(function(){
@@ -777,8 +791,25 @@ setInterval(() => {
     $("#drone1").ready(function(){
         $("#drone1").animate({marginTop: "5px"});
     });
+
+ 
 });
 }, 2000);
+
+setInterval(() => {
+  $(document).ready(function(){
+    $("#humanoid").ready(function(){
+        $("#humanoid").animate({marginTop: "-5px"});
+    });
+    $("#humanoid").ready(function(){
+        $("#humanoid").animate({marginTop: "5px"});
+    });
+
+ 
+});
+}, 1500);
+
+
 
 $(window).on("scroll", function () {
    if ($(this).scrollTop() > 1500) {
@@ -1025,48 +1056,48 @@ $(window).on("scroll", function () {
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1350) {
-     $('.plano1t').fadeIn(2500)
+   if ($(this).scrollTop() > 1200) {
+     $('.plano1t').fadeIn(2000)
    } else {
     $('.plano1t').fadeOut('slow')
    }
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1350) {
-     $('.plano1').fadeIn(2800)
+   if ($(this).scrollTop() > 1200) {
+     $('.plano1').fadeIn(1500)
    } else {
     $('.plano1').fadeOut('slow')
    }
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1350) {
-     $('.plano2t').fadeIn(2800)
+   if ($(this).scrollTop() > 1200) {
+     $('.plano2t').fadeIn(2500)
    } else {
     $('.plano2t').fadeOut('slow')
    }
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1350) {
-     $('.plano2').fadeIn(3000)
+   if ($(this).scrollTop() > 1200) {
+     $('.plano2').fadeIn(2200)
    } else {
     $('.plano2').fadeOut('slow')
    }
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1350) {
-     $('.plano3t').fadeIn(3000)
+   if ($(this).scrollTop() > 1200) {
+     $('.plano3t').fadeIn(2500)
    } else {
     $('.plano3t').fadeOut('slow')
    }
 });
 
 $(window).on("scroll", function () {
-   if ($(this).scrollTop() > 1350) {
-     $('.plano3').fadeIn(3200)
+   if ($(this).scrollTop() > 1200) {
+     $('.plano3').fadeIn(2800)
    } else {
     $('.plano3').fadeOut('slow')
    }
@@ -1168,11 +1199,11 @@ $(window).on("scroll", function () {
                           </div>
                         </div>
 
-                        <div class="bgg mt-5 mb-5">
+                        <div class="bgg mt-5 mb-5 d-block">
                           <img id="corte8" style="position:absolute;left:0;opacity:1;margin-top:0;" class="img-fluid imgAbsolute" src="images/corte8.png" alt="">
-<div id="history" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;" class="mt-5">
-                          <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center mb-5 ">HISTORY</h2>
-                          <div class="hist" style="color:#60337A;" class="text-light mb-5">
+<div id="history" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;" class="mt-5 mb-5">
+                          <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center mb-5 mt-5 ">HISTORY</h2>
+                          <div class="hist" style="color:#60337A;z-index: 9999;" class="text-light mb-5 mt-5">
                             Once upon a time, perhaps even an eon ago, in a land known as Aevum, it was split into four great rivers dominated by the four great creatures that are responsible for balancing the entire dimension. <br><br>
                             One of the four magic being fascinated by a humble young human full of pure curiosity in search of a formula for your people stop their suffering the being decides to come to Aearth in the form of a turtle. <br><br>
                             The young man, in an evidently universal epiphany, asked this being: Oh little one, what is that?  <br><br>
@@ -1190,9 +1221,9 @@ $(window).on("scroll", function () {
               
          
 
-            <div class="mt-5">
+            <div class="mt-5 ">
               <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="">
+<div class="foo">
   <img id="corte9" style="position:absolute;right:0;opacity:1;margin-top:-15%;" class="img-fluid imgAbsolute" src="images/corte9.png" alt="">
   <img id="corte10" style="position:absolute;right:0;opacity:1;height:380px;" class="img-fluid imgAbsolute" src="images/corte10.png" alt="">
 

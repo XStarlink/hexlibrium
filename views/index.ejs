@@ -19,10 +19,11 @@
     <!--blocky ------------------------------------------------------------------------------------------------------------------------------------------------->  
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="sweet-modal/dist/min/jquery.sweet-modal.min.css" />
 
     <!--pleaserotate-->
     <script>window.PleaseRotateOptions = { subMessage: '', allowClickBypass: false }</script>
-    <script src="/libs/pleaserotate/pleaserotate.min.js"></script>
+    <!-- <script src="/libs/pleaserotate/pleaserotate.min.js"></script> -->
    
     <script>
         function toggleFullScreen() {
@@ -38,9 +39,52 @@
                 cancelFullScreen.call(doc);
             }
         }
-    </script>
+          </script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+<style>
 
+.sweet-modal-title{
+    text-align: center;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    };
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    };
+}
+
+#test {
+    /* background: red; */
+    /* width: 20px;
+    height: 20px; */
+    -webkit-animation: pulse 1s linear infinite;
+    animation: pulse 1s linear infinite;
+}
+#test:hover {
+    -webkit-animation: none;
+    animation:none;
+}
+
+</style>
 </head>
 
 <body>
@@ -158,7 +202,7 @@
 
             <!--links-->
             <div class="links">
-                <!-- <a data-use="fullscreen">📺</a> |
+                <!-- <a data-use="fullscreen"></a> |
                 <a data-use="home">home</a> | -->
                 <!-- <a data-use="tutorial" href="tutorial">tutorial</a> -->
                 <!-- <a data-use="tutorial" href="tutorial">NFT inventory</a> -->
@@ -395,12 +439,63 @@
         <script>
             
             var level = document.querySelectorAll('.world')
-          level.forEach(e=>{
-              e.addEventListener('click',(e)=>{
-                  e.preventDefault()
-                  e.onclick = false
-              })
-          })
+            console.log(level)
+            level[10].style.width = '60%'
+            let arrow = document.createElement('img')
+            arrow.setAttribute('src', 'https://www.freeiconspng.com/thumbs/green-arrow-png/green-arrow-png-1.png')
+            arrow.setAttribute('id', 'test')
+            arrow.setAttribute('style', 'opacity:0.6')
+            arrow.style.float = 'right'
+           
+            level[10].appendChild(arrow)
+
+            level[1].setAttribute('onclick', 'disablessed()')
+            level[2].setAttribute('onclick', 'disablessed()')
+            level[3].setAttribute('onclick', 'disablessed()')
+            level[4].setAttribute('onclick', 'disablessed()')
+            level[5].setAttribute('onclick', 'disablessed()')
+            level[6].setAttribute('onclick', 'disablessed()')
+            level[7].setAttribute('onclick', 'disablessed()')
+            level[8].setAttribute('onclick', 'disablessed()')
+            level[9].setAttribute('onclick', 'disablessed()')
+            level[11].setAttribute('onclick', 'disablessed()')
+
+            function disablessed(){
+                let imgh = '<img style="width:25px;height:25px;" src="images/space.png" alt="" />';
+                console.log(imgh)
+                $.sweetModal({
+	title: 'HEXLIBRIUM',
+	content: 'You need finish <b>"AEROSPACE LABYRINTH"</b> <i><img style="width:25px;height:25px;" src="images/space.png" alt="" /></i>first.',
+	theme: $.sweetModal.THEME_DARK,
+    icon:$.sweetModal.ICON_WARNING,
+    width:'auto'
+
+});
+            }
+            
+            if (window.matchMedia("(max-width: 1018px)").matches) {
+                arrow.style.marginLeft = '80px'
+} else {
+console.log(arrow)
+}
+
+if (window.matchMedia("(max-width: 962px)").matches) {
+                arrow.style.marginLeft = '150px'
+} else {
+console.log(arrow)
+}
+
+
+// var worlds = document.querySelectorAll('.worlds')
+// worlds[0].setAttribute('style', '')
+// var levels = document.querySelectorAll('.levels')
+// levels[0].setAttribute('style', '')
+
+// level[10].addEventListener('mouseover', ()=>{
+
+// })
+
+
         </script> 
 
         <!-- <script type="module">
@@ -412,6 +507,8 @@
             });
         </script> -->
     </div>
+    <script src="sweet-modal/dist/min/jquery.sweet-modal.min.js"></script>
+
 </body>
 
 </html>
