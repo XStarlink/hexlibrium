@@ -1428,7 +1428,15 @@ import { Screen } from './Screen.js';
 				this.it.scale.set(0.003,0.003,0.003); //(0,-3,-4.5);
 				//this.planet.rotation.set(Math.PI/2,0,0); //(0,-3,-4.5);
 				// this.fans = [];
-
+			// 	const mouse3D = new THREE.Vector3( (event.clientX / window.innerWidth) * 2 - 1, -(event.clientY / window.innerheight) * 2 - 1, 0.5 )
+			// 	let raycaster = new THREE.Raycaster();
+			// 	raycaster.setFromCamera(mouse3D, this.camera)
+			// 	const intersects = raycaster.intersectObjects(this.it.object);
+				
+			// 	if(intersects.length > 0) {
+			// 		console.log('oawidjadwjioaiwdjo')
+			// 		window.open('https://www.google.com')
+			// } 
 				// const mergeObjects = {elements2:[], elements5:[], terrain:[]};
 
 				gltf.scene.traverse( child => {
@@ -1443,6 +1451,7 @@ import { Screen } from './Screen.js';
 						// }else{
 						 	child.castShadow = true;
 						 	child.receiveShadow = true;
+							 
 						//}
 						//else if (child.name.includes('fan')){
 						// 	this.fans.push( child );
@@ -1463,6 +1472,7 @@ import { Screen } from './Screen.js';
 						// }else if (child.parent.name.includes('main')){
 						// 	child.castShadow = true;
 						// }
+					
 					}
 				});
 
