@@ -47,7 +47,7 @@
         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
         font-weight: 800;
       }
-    
+      
       .sacre
      {
       height: 250px;
@@ -57,6 +57,9 @@
     width:100%;
     opacity: 0.8;
   }
+
+ 
+
   @media screen and (max-width: 1414px) {
 .foo{ 
   margin-top:20%;
@@ -79,6 +82,8 @@
      }
   }
 
+ 
+
   @media (max-width: 689px)
   {
     .imgsacred
@@ -97,7 +102,28 @@
       
      }
   }
+
+
+
+  @media (max-width: 752px)
+  {
+  .inspiration{
+      width: 100% !important;
+      
+     }
+  }
  
+  @media (max-width: 558px)
+  {
+  .inspiration{
+      width:90% !important;
+      align-self: center !important;
+      text-align:justify !important;
+      height:auto;
+  
+     }
+  }
+
 
   @media (max-width: 491px)
   {
@@ -129,7 +155,15 @@
          align-self:center;
          text-align:justify;
       }
-  
+      .inspiration{
+      margin-bottom: 10%;
+      height:auto;
+      display:flex;
+      flex-direction:column;
+      align-content:center;
+      justify-content:center;
+      z-index: 999;
+     }
 
     </style>
 
@@ -1189,9 +1223,9 @@ $(window).on("scroll", function () {
 
             </script>
           
-            <div style="height:auto;margin-bottom:10%;" class=" mt-5">
+            <div class="inspiration">
               <img id="corte7" style="position:absolute;left:0;opacity:1;margin-top:-8%;" class="img-fluid imgAbsolute" src="images/corte7.png" alt="">
-                   <div id="inspiration" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;">
+                   <div id="inspiration" class="inspiration">
                           <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center ">INSPIRATION</h2>
             
                           <div style="width:50%;color:#60337A;" class=" text-center align-self-center ">
@@ -1199,11 +1233,11 @@ $(window).on("scroll", function () {
                           </div>
                         </div>
 
-                        <div style="" class="bgg mt-5 mb-5 d-block">
+                        <div class="bgg d-block">
                           <img id="corte8" style="position:absolute;left:0;opacity:1;margin-top:0;" class="img-fluid imgAbsolute" src="images/corte8.png" alt="">
-<div id="history" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;" class="mt-5 mb-5">
-                          <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center mb-5 mt-5 ">HISTORY</h2>
-                          <div class="hist" style="color:#60337A;z-index: 9999;" class="text-light mb-5 mt-5">
+<div id="history" style="height:100%;display:flex;flex-direction:column;align-content:center;justify-content:center;" class="">
+                          <h2 style="text-shadow: 2px 4px 3px rgba(0,0,0,0.3);color:#60337A;" class=" text-center ">HISTORY</h2>
+                          <div class="hist" style="color:#60337A;z-index: 999;" class="text-light">
                             Once upon a time, perhaps even an eon ago, in a land known as Aevum, it was split into four great rivers dominated by the four great creatures that are responsible for balancing the entire dimension. <br><br>
                             One of the four magic being fascinated by a humble young human full of pure curiosity in search of a formula for your people stop their suffering the being decides to come to Aearth in the form of a turtle. <br><br>
                             The young man, in an evidently universal epiphany, asked this being: Oh little one, what is that?  <br><br>
